@@ -196,4 +196,6 @@
     <string name="deleting_wallet_tip">删除钱包中…</string>
     <string name="creating_wallet_tip">创建钱包中…</string>
     <string name="saving_wallet_tip">保存钱包中…</string>
+
+    <string name="keep_on_develop">"继续更新…"</string>
 </resources>

@@ -13,6 +13,6 @@
         android:layout_height="match_parent"
         android:overScrollMode="never"
         android:divider="@color/mine_menu_divider_color"
-        android:dividerHeight="0.5dp" />
+        android:dividerHeight="1.0dp" />
 
 </LinearLayout>

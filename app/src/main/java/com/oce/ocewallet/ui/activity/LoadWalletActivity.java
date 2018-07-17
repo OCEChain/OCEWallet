@@ -74,7 +74,7 @@ public class LoadWalletActivity extends BaseActivity {
         indicatorView.setSplitAuto(true);
         indicatorView.setOnTransitionListener(new OnTransitionTextListener()
                 .setColor(getResources().getColor(R.color.etc_transfer_advanced_setting_help_text_color), getResources().getColor(R.color.discovery_application_item_name_color))
-                .setSize(14, 14));
+                .setSize(16, 16));//increase scrollview size
         indicatorView.setScrollBar(new TextWidthColorBar(this, indicatorView, getResources().getColor(R.color.etc_transfer_advanced_setting_help_text_color), UUi.dip2px(2)));
         indicatorView.setScrollBarSize(50);
         indicatorViewPager = new IndicatorViewPager(indicatorView, vpLoadWallet);

@@ -1,98 +1,170 @@
 apply plugin: 'com.android.application'
-apply plugin: 'org.greenrobot.greendao' // apply plugin
+//apply plugin: 'com.alibaba.arouter'
+
 
 android {
-    compileSdkVersion 26
+    compileSdkVersion project.ANDROID_BUILD_SDK_VERSION as int
+    buildToolsVersion project.ANDROID_BUILD_TOOLS_VERSION
     defaultConfig {
-        applicationId "com.oce.ocewallet"
-        minSdkVersion 16
-        targetSdkVersion 26
-        versionCode 1
-        versionName "1.0"
+        applicationId "com.idea.jgw"
+//        applicationId "com.idea.jgw.test"
+        minSdkVersion project.ANDROID_BUILD_MIN_SDK_VERSION
+        targetSdkVersion project.ANDROID_BUILD_TARGET_SDK_VERSION
+        versionCode 19
+        versionName "1.0.5"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-        externalNativeBuild {
-            cmake {
-                cppFlags ""
+
+        multiDexEnabled true
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [moduleName: project.getName()]
             }
         }
     }
+
+    signingConfigs {
+
+        myConfig {
+            storeFile file("/keystore/oce.jks")
+            storePassword "oce123456"
+            keyAlias "oce"
+            keyPassword "oce123456"//将这里的“**”替换成自己的信息
+        }
+    }
     buildTypes {
+        debug {
+            signingConfig signingConfigs.myConfig
+        }
+
         release {
+            signingConfig signingConfigs.myConfig
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    externalNativeBuild {
-//        cmake {
-//            path "CMakeLists.txt"
-//        }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    packagingOptions {
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/notice'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/rxjava.properties'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'lib/x86_64/darwin/libscrypt.dylib'
+        exclude 'lib/x86_64/freebsd/libscrypt.so'
+        exclude 'lib/x86_64/linux/libscrypt.so'
+        exclude 'com/google/thirdparty/publicsuffix/PublicSuffixPatterns.gwt.xml'
+        exclude 'com/google/thirdparty/publicsuffix/PublicSuffixType.gwt.xml'
+        exclude 'org/bitcoinj/crypto/mnemonic/wordlist/english.txt'
+        exclude 'org/bitcoinj/crypto/cacerts'
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
     }
 }
 
 dependencies {
-    implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation 'com.android.support:appcompat-v7:26.1.0'
-    implementation 'com.android.support:recyclerview-v7:26.1.0'
-    implementation 'com.android.support:design:26.1.0'
-    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.1'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
-    // Annotation
-    implementation 'com.jakewharton:butterknife:8.8.1'
-    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
-    // leakcanary 可以迅速定位内存泄漏
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support.constraint:constraint-layout:1.1.2'
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile "com.android.support:appcompat-v7:26.1.0"
+    compile "com.android.support:recyclerview-v7:26.1.0"
+    compile "com.android.support:design:26.1.0"
+    testCompile 'junit:junit:4.12'
+    compile 'com.alibaba:fastjson:1.2.47'
+    compile ('com.squareup.retrofit2:retrofit:2.4.0') {
+        exclude group: 'com.squareup.okhttp3'
+    }
+    compile 'com.squareup.retrofit2:converter-gson:2.4.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava2:2.4.0'
+    compile 'com.squareup.okhttp3:okhttp:3.10.0'
+    compile ('com.squareup.okhttp3:logging-interceptor:3.8.0') {
+        exclude group: 'com.squareup.okhttp3'
+    }
+    compile 'io.reactivex.rxjava2:rxandroid:2.1.0'
+    compile 'io.reactivex.rxjava2:rxjava:2.2.3'
+    compile 'com.jakewharton:butterknife:8.1.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.0.1'
+    compile 'com.alibaba:arouter-api:1.3.1'
+    //    compile 'com.alibaba:arouter-register:1.0.2'
+    annotationProcessor 'com.alibaba:arouter-compiler:1.1.4'
+    //glide
+    compile 'com.github.bumptech.glide:glide:4.7.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
+    //dex分包
+    compile 'com.android.support:multidex:1.0.1'
+    //内存溢出
     debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5.4'
     releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
-    testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
-    // Rx
-    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
-    compile 'io.reactivex.rxjava2:rxjava:2.1.7'
-    //Retrofit
-    compile 'com.squareup.retrofit2:retrofit:2.3.0'
-    // Gson converter
-    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
-    // Okhttp
-    compile 'com.squareup.okhttp3:okhttp:3.8.1'
-    // RxJava　adapter
-    compile 'com.jakewharton.retrofit:retrofit2-rxjava2-adapter:1.0.0'
-    // 沉浸式状态栏
-    compile 'com.gyf.barlibrary:barlibrary:2.3.0'
-    compile 'com.lcodecorex:tkrefreshlayout:1.0.7'
-    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.22'
-    implementation project(':zxingsupport')
-
-//    compile 'com.google.guava:guava:24.1-jre'
-    // or, for Android:
-    compile 'com.google.guava:guava:24.1-android'
-
-    // 以太坊开发库
-    compile('org.web3j:core:3.3.1-android')
-    // 圆形图片
-    compile 'de.hdodenhof:circleimageview:2.1.0'
-
-    // 圆点Indicator
-    compile 'com.youth.banner:banner:1.4.10'
-    // glide 图片加载库
-    implementation("com.github.bumptech.glide:glide:4.6.1") {
-        exclude group: "com.android.support"
+    //以太的第三方钱包库
+    compile('org.web3j:core:3.3.1-android') {
+        exclude group: 'com.squareup.okhttp3'
     }
-    annotationProcessor 'com.github.bumptech.glide:compiler:4.6.1'
+    //权限
+    compile 'com.github.jokermonn:permissions4m:2.1.2-lib'
+    annotationProcessor 'com.github.jokermonn:permissions4m:2.1.2-processor'
+    compile('org.bitcoinj:bitcoinj-core:0.14.7') {
+        exclude group: 'com.squareup.okhttp3'
+    }
+    compile ('com.neovisionaries:nv-websocket-client:2.6') {
+        exclude group: 'com.squareup.okhttp3'
+    }
+    compile('io.socket:socket.io-client:0.7.0') {
+        // excluding org.json which is provided by Android
+        exclude group: 'org.json', module: 'json'
+        exclude group: 'com.squareup.okhttp3'
+    }
+    compile 'info.guardianproject.netcipher:netcipher:1.2.1'
+    compile 'org.apache.commons:commons-lang3:3.4'
+    compile 'commons-io:commons-io:2.4'
+    //bug收集 //其中latest.release指代最新Bugly SDK版本号，也可以指定明确的版本号，例如2.2.0
+    //    compile 'com.tencent.bugly:crashreport:latest.release'
+    compile project(':zxing')
+    compile project(':flowlayout-lib')
+    compile 'com.github.jokermonn:permissions4m:2.1.2-lib'
+    annotationProcessor 'com.github.jokermonn:permissions4m:2.1.2-processor'
+    //okhttp 上传文件工具
+    //    compile ('com.github.zhaokaiqiang.okhttpplus:library:1.0.0') {
+    //        exclude group:'com.squareup.okhttp3'
+    //    }
+    compile project(':okhttp-lib')
+    compile files('libs/bugly_crash_release.jar')
+    //三方下拉刷新recyclerView
+//    compile 'com.jcodecraeer:xrecyclerview:1.5.9'
+    compile project(':xrecyclerview')
+    //enventBus
+    compile 'org.greenrobot:eventbus:3.1.1'
+    compile 'com.yanzhenjie:permission:2.0.0-rc12'
+    compile project(':vigolibrary-2.0.0')
 
-    // greenDao
-    compile 'org.greenrobot:greendao:3.2.2'
-    // EventBus
-    compile 'org.greenrobot:eventbus:3.0.0'
-    // FlexboxLayoutManager
-    implementation 'com.google.android:flexbox:0.3.2'
-    // ViewPagerIndicator
-    compile 'com.shizhefei:ViewPagerIndicator:1.1.6'
-    // bitcoinj
-    implementation'org.bitcoinj:bitcoinj-core:0.14.3'
 }
 
-greendao {
-    schemaVersion 1
-//    daoPackage 'com.fengpi.gen'
-//    targetGenDir 'src/main/java'
+configurations.all {
+    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+        def requested = details.requested
+        if (requested.group == 'com.android.support') {
+            if (!requested.name.startsWith("multidex")) {
+                details.useVersion '26.1.0'
+            }
+        }
+    }
 }
+

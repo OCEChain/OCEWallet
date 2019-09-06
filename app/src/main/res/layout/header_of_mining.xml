@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <SurfaceView
+        android:id="@+id/sv_of_content"
+        android:layout_width="match_parent"
+        android:layout_height="463dp" />
+
+    <ImageView
+        android:id="@+id/iv_of_content_bg"
+        android:layout_width="match_parent"
+        android:layout_height="463dp"/>
+
+    <TextView
+        android:id="@+id/tv_notify"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:background="#33080816"
+        android:gravity="center"
+        android:text="@string/sample_notify"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tv_asset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="64dp"
+        android:gravity="center"
+        android:text="@string/sample_asset"
+        android:textColor="#5a85ff"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_hashrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="85dp"
+        android:gravity="center"
+        android:text="@string/sample_hashrate"
+        android:textColor="#5a85ff"
+        android:textSize="12sp" />
+
+    <com.idea.jgw.view.FloatView
+        android:id="@+id/fv_of_mining"
+        android:layout_width="match_parent"
+        android:layout_height="264dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="100dp" />
+
+    <TextView
+        android:id="@+id/tv_mining_income_label"
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:layout_below="@id/sv_of_content"
+        android:background="#eef0f4"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:text="@string/mining_income"
+        android:textColor="#636467"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/btn_add_hashrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/sv_of_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="13dp"
+        android:background="@null"
+        android:drawableTop="@mipmap/add_hashrate"
+        android:text="@string/add_hashrate"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
+
+</RelativeLayout>

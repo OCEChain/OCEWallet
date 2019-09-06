@@ -1,1 +1,1 @@
-include ':app',':zxingsupport'
+include ':app', ':zxing', ':flowlayout-lib', ':okhttp-lib', 'xrecyclerview', ':vigolibrary-2.0.0'

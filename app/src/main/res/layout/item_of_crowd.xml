@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="16dp" android:paddingRight="16dp">
+    
+    <ImageView
+        android:id="@+id/iv_of_logo"
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/tv_of_crowd_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_of_logo"
+        android:layout_alignTop="@id/iv_of_logo"
+        android:layout_marginLeft="16dp"
+        android:textColor="#193fc3"
+        android:textSize="14sp"
+        android:text="@string/crowd_name_sample" />
+
+    <TextView
+        android:id="@+id/tv_of_crowd_award"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_of_crowd_name"
+        android:layout_below="@id/tv_of_crowd_name"
+        android:textColor="@color/gravity6"
+        android:textSize="14sp"
+        android:text="奖励池:  99999  OCE" />
+
+    <TextView
+        android:id="@+id/tv_of_crowd_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_of_crowd_name"
+        android:layout_below="@id/tv_of_crowd_award"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/gravity6"
+        android:textSize="14sp"
+        android:text="超值档:  2999  OCE" />
+
+    <TextView
+        android:id="@+id/tv_of_crowd_schedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_of_crowd_name"
+        android:layout_below="@id/tv_of_crowd_level"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/gravity6"
+        android:textSize="14sp"
+        android:text="众筹进度:  2387%" />
+
+</RelativeLayout>

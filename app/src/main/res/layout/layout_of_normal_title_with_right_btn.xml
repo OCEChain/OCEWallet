@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="60dp"
+android:paddingTop="20dp"
+android:background="@mipmap/bg_of_title">
+
+    <Button
+        android:id="@+id/btn_of_back"
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:drawableLeft="@mipmap/ic_of_back"
+        android:paddingLeft="16dp"
+        android:background="@null"/>
+
+    <TextView
+        android:id="@+id/tv_of_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:background="@null"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/tv_of_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:paddingRight="16dp"
+        android:gravity="center_vertical"
+        android:text="@string/customer_service"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:background="@null"/>
+
+</RelativeLayout>

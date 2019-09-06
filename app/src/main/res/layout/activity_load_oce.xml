@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_of_normal_title_with_right_btn"/>
+
+    <LinearLayout
+        android:id="@+id/ll_how_to_load"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+
+        <EditText
+            android:id="@+id/et_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="地址" />
+
+        <EditText
+            android:id="@+id/et_privateKey"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="私钥（b）" />
+
+        <EditText
+            android:visibility="gone"
+            android:id="@+id/et_publicKey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="公钥" />
+
+        <Button
+            android:id="@+id/btn_role"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/merchants" />
+
+        <Button
+            android:id="@+id/btn_load"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="导入" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

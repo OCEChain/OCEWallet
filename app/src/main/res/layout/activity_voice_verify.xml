@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/rl_of_title"
+        layout="@layout/layout_of_normal_title" />
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="4"/>
+
+    <TextView
+        android:id="@+id/tv_voice_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textColor="@color/title_1"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:text="@string/status_say"
+        android:layout_gravity="center"/>
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="3"/>
+
+    <LinearLayout
+        android:id="@+id/ll_phrase"
+        android:layout_width="106dp"
+        android:layout_height="94dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@mipmap/icon_phrase_bg">
+
+        <TextView
+            android:id="@+id/tv_phrase_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/voice_number"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/tv_phrase_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/voice_number"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/tv_phrase_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/voice_number"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/tv_phrase_4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/voice_number"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="4"/>
+
+    <TextView
+        android:id="@+id/tv_step_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:padding="16dp"
+        android:layout_gravity="center"
+        android:text="@string/voice_steps"
+        android:textSize="14sp"
+        android:textColor="@color/gravity3"
+        android:background="@mipmap/bg_key_words_input"/>
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="2"/>
+
+    <Button
+        android:id="@+id/btn_of_input"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/voice_input"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:enabled="false"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/selector_of_blue_button"/>
+</LinearLayout>

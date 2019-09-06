@@ -1,201 +1,397 @@
-<resources>
-    <string name="app_name">ETHToken</string>
+﻿<resources>
+    <string name="app_name" translatable="false">OCE</string>
+    <string name="login" translatable="false">Login</string>
+    <string name="agree_agreement" translatable="false">Agree the JGW User Agreement</string>
+    <string name="customer_service" translatable="false">Service</string>
+    <string name="register" translatable="false">Register</string>
+    <string name="forget_pwd" translatable="false">Forget Password</string>
+    <string name="next" translatable="false">Next</string>
+    <string name="set_login_pwd" translatable="false">Set Login Password</string>
+    <string name="reset_login_pwd" translatable="false">Reset Login Password</string>
+    <string name="login_pwd_description" translatable="false">Login password is used each time you log in to JGW Wallet</string>
+    <string name="reset_now" translatable="false">Reset Now</string>
+    <string name="ok" translatable="false">OK</string>
+    <string name="cancel" translatable="false">Cancel</string>
+    <string name="verify_verification_code" translatable="false">Verify Verification Code</string>
 
-    <string name="exit_tips">再按一次退出程序</string>
+    <string name="jaw_service" translatable="false">Customer Service Tel</string>
+    <string name="jaw_service_tel" translatable="false">400 088 8888</string>
+    <string name="string_of_cancel" translatable="false">Cancel</string>
+    <string name="string_of_remove" translatable="false">Remove</string>
+    <string name="call_service" translatable="false">Call Service</string>
+    <string name="pick_photo_from_album" translatable="false">Pick Photo from Album</string>
+    <string name="take_photo" translatable="false">Take Photo</string>
 
-    <string name="homepage_tab_text_news">发现</string>
-    <string name="homepage_tab_text_mall">资产</string>
-    <string name="homepage_tab_text_mine">我的</string>
-    <string name="mine_title">我</string>
-    <string name="property_drawer_qrcode_scanner">扫一扫</string>
-    <string name="property_drawer_create_wallet">创建钱包</string>
+    <string name="app_name_zh" translatable="false">JGW Wallet</string>
+    <string name="feature" translatable="false">Hardware encryption, perfect for mining</string>
+    <string name="create_wallet" translatable="false">Create Wallet</string>
+    <string name="load_wallet" translatable="false">Load Wallet</string>
+    <string name="wallet_create_success" translatable="false">Wallet Create Successfully</string>
+    <string name="restore_now" translatable="false">Back Up Now</string>
+    <string name="load" translatable="false">Load</string>
 
-    <string name="create_wallet_name_hint">钱包名称</string>
-    <string name="create_wallet_pwd_hint">密码</string>
-    <string name="create_wallet_pwd_again_hint">重复密码</string>
-    <string name="create_wallet_pwd_reminder_info_hint">密码提示信息(可不填)</string>
-    <string name="create_wallet_agreement_reminder">我已经仔细阅读并同意</string>
-    <string name="create_wallet_agreement">服务及隐私条款</string>
-    <string name="create_wallet_name_repeat_tips">钱包名称重复</string>
-    <string name="create_wallet_name_input_tips">请输入钱包名称</string>
-    <string name="create_wallet_pwd_input_tips">密码不能为空</string>
-    <string name="create_wallet_pwd_confirm_input_tips">密码不一致，请重新输入</string>
-    <string name="create_wallet_alert1">* 密码用于隐私保护和交易授权，强度非常重要</string>
-    <string name="create_wallet_alert2">* intoken  不存储密码，也无法帮您找回，请务必牢记</string>
+    <string name="input_key_word_description" translatable="false">Please input 12 Keywords and use the space bar to seperate each word</string>
+    <string name="copy_key_word_description" translatable="false">Keywords can help you restore wallet, please copy your keywords and store in a safe place!</string>
+    <string name="forbid_screen_description" translatable="false">Screenshots may be accessed by others, please copy your keywords and store in a safe place!</string>
+    <string name="remove_key_word_description" translatable="false">Keywords Successfully Verified, please remove the keywords from your wallet for safety reason!</string>
+    <string name="copy_key_word" translatable="false">Please copy your keywords</string>
+    <string name="input_key_word" translatable="false">Input keywords</string>
+    <string name="check_key_word" translatable="false">Check keywords</string>
+    <string name="remove_key_word" translatable="false">Remove keywords</string>
+    <string name="forbid_screen_shot" translatable="false">Screeshots Forbidden</string>
+    <string name="understand" translatable="false">Understand</string>
+    <string name="check_key_word_description" translatable="false">Please click the keywords in sequence</string>
 
-    <string name="property_total_assets">总资产(¥)</string>
-    <string name="property_approximate">≈</string>
+    <string name="finger_print_verify" translatable="false">Fingerprint Verification</string>
+    <string name="password_verify" translatable="false">Password Verification</string>
+    <string name="password_verify_tip" translatable="false">Please Verify Password</string>
+    <string name="finger_print_verify_tip" translatable="false">Please Verify Your Fingerprint</string>
+    <string name="set_transaction_pin" translatable="false">Set Asset Password</string>
+    <string name="finger_print_verify_desc" translatable="false">You haven\'t used the app for a long time, for your account security, the app is locked, please verify your fingerprint or unlock it with your login password.</string>
+    <string name="reset_transaction_pin" translatable="false">Reset Asset Password</string>
+    <string name="set_transaction_pin_notice" translatable="false">\u3000\u3000 The asset password is used when the asset changes, thus it is an important guarantee for your asset security. The  server does not store the asset password. It is only stored in the phone encryption chip. The password cannot be modified after the setting is completed, it can only be reset by importing the wallet!</string>
+    <string name="key_word_notice" translatable="false">\u3000\u3000 Leakage of keywords is equal to leakage of wallet assets, and keywords are the only way to restore your wallet, please make sure to make a copy of your keywords!</string>
+    <string name="ensure_transaction_pin" translatable="false">Confirm Asset Password</string>
+    <string name="ensure_transaction_pin_notice" translatable="false">Confirm Asset Password Hint</string>
+    <string name="recover_wallet_warning" translatable="false">\u3000\u3000 The asset password is saved locally and can only be reset by importing the wallet. Please re-import the wallet to reset your asset password. JGW Wallet only supports one wallet, the original wallet will be replaced after a new wallet is imported</string>
 
-    <string name="mine_wallet_manage">钱包管理</string>
-    <string name="mine_trade_record">交易记录</string>
-    <string name="mine_msg_center">消息中心</string>
-    <string name="mine_contracts">联系人</string>
-    <string name="mine_system_setting">系统设置</string>
-    <string name="mine_personal_center">个人中心</string>
-    <string name="mine_help_center">帮助中心</string>
-    <string name="mine_about_us">关于我们</string>
+    <string name="wallet" translatable="false">Wallet</string>
+    <string name="discovery" translatable="false">Mining</string>
+    <string name="mine" translatable="false">Mine</string>
+    <string name="total_asset" translatable="false">Total Asset(CNY)</string>
+    <string name="asset_protected" translatable="false">Your asset has been protected with chip encryption</string>
+    <string name="asset_unprotected" >Your asset has been unprotected with chip encryption</string>
+    <string name="security_manager" translatable="false">Security Management</string>
+    <string name="share_to_friends" translatable="false">Share to Friends</string>
+    <string name="base_task" translatable="false">Basic Task</string>
+    <string name="help" translatable="false">Help Center</string>
+    <string name="about_us" translatable="false">About Us</string>
+    <string name="ram_share" translatable="false">Memory Sharing</string>
+    <string name="chain_on" translatable="false">Crowdfunding on Chain</string>
+    <string name="data_transfer_platform" translatable="false">Data Transaction Platform</string>
+    <string name="status_loading" translatable="false">Verification data loading...Please wait！</string>
+    <string name="status_say" translatable="false">Please click the button and say the numbers below in English</string>
+    <string name="status_recording" translatable="false">Recording, please say the numbers below in English</string>
+    <string name="status_uploading" translatable="false">Uploading recording, please wait...</string>
+    <string name="voice_input" translatable="false">Voice Input</string>
+    <string name="voice_verify" translatable="false">Voice Verification</string>
+    <string name="toast_enroll_success" translatable="false">Voice Registration Successful!</string>
+    <string name="voice_register_failed" translatable="false">Voice registration Unsuccessful!</string>
+    <string name="toast_verify_failed" translatable="false">Voice Verificatiom Unsuccessful!</string>
+    <string name="voice_verify_success" translatable="false">Voice Verificatiom Successful!</string>
+    <string name="vigo_get_id_failed" translatable="false">Unable to Connect Voice Verification Service!</string>
+    <string name="audio_permission_failed" translatable="false">Audio Permission Application Failed!</string>
+    <!--<string name="status_loading">Loading, please wait...</string>-->
+    <!--<string name="status_say">Please press button and say the phrase:</string>-->
+    <!--<string name="status_recording">Recording, please speak now...</string>-->
+    <!--<string name="status_uploading">Uploading, please wait...</string>-->
 
-    <string name="discovery_application">应用</string>
-    <string name="discovery_news">文章</string>
+    <string name="transaction_detail" translatable="false">Transaction Details</string>
+    <string name="success" translatable="false">Success</string>
+    <string name="fail" translatable="false">Fail</string>
+    <string name="send" translatable="false">Send</string>
+    <string name="received" translatable="false">Receive</string>
+    <string name="ensure_send" translatable="false">Confirm Sending</string>
+    <string name="send_amount" translatable="false">Send Amount</string>
+    <string name="send_address" translatable="false">Send Address</string>
+    <string name="received_address" translatable="false">receiving address</string>
+    <string name="transaction_id" translatable="false">Transaction id</string>
+    <string name="commission" translatable="false">Mining Commission</string>
+    <string name="chain_number" translatable="false">Blockchain Height</string>
+    <string name="cny_unit" translatable="false">CNY</string>
+    <string name="copy" translatable="false">Copy</string>
+    <string name="share_address" translatable="false">Share Address</string>
+    <string name="mine_address" translatable="false">My Address</string>
 
-    <string name="add_new_property_title">添加新资产</string>
-    <string name="search_toolbar_cancel">取消</string>
-    <string name="search_hint">搜索  Token  名称或合约地址</string>
-    <string name="search_ico_empty_hint1">没找匹配的结果？</string>
-    <string name="search_ico_empty_hint2">试试在页面底部提交新token</string>
-    <string name="search_upload_token">向我们提交新Token</string>
+    <string name="balance" translatable="false">Balance</string>
+    <string name="agree_service_manager" translatable="false">Please Agree with the JGW User Agreement!</string>
 
-    <string name="gathering_qrcode_title">收款码</string>
-    <string name="gathering_qrcode_share">分享</string>
-    <string name="gathering_qrcode_gathering_money">收款金额</string>
-    <string name="gathering_qrcode_copy_gathering_address">复制收款地址</string>
-    <string name="gathering_qrcode_copy_success">已复制</string>
 
-    <string name="contact_no_data">暂时没有联系人</string>
+    <string name="hint_of_input_phone" translatable="false">Please enter your phone number</string>
+    <string name="hint_of_input_security" translatable="false">Please enter the verification code</string>
+    <string name="hint_of_input_pwd" translatable="false">Please enter your login password</string>
+    <string name="hint_of_set_pwd" translatable="false">Please enter a 6-16 digit password</string>
+    <string name="hint_of_invite_code" translatable="false">Please enter your invitation code (optional)</string>
+    <string name="hint_of_send_amount" translatable="false">Please enter amount</string>
+    <string name="received_address_hint" translatable="false">Please enter receiving address</string>
+    <string name="hint_input_transaction_pin" translatable="false">Please enter asset password</string>
+    <string name="transaction_pin_error" translatable="false">Wrong asset password, please re-enter</string>
+    <string name="send_security" translatable="false">Send verification code</string>
 
-    <string name="etc_transfer_title">ETC转账</string>
-    <string name="etc_transfer_address">收款人钱包地址</string>
-    <string name="etc_transfer_money">转账金额</string>
-    <string name="etc_transfer_remark">备注</string>
-    <string name="etc_transfer_gas_cost">矿工费用</string>
-    <string name="etc_transfer_gas_price">自定义 Gas Price</string>
-    <string name="etc_transfer_gas">自定义 Gas</string>
-    <string name="etc_transfer_advanced_setting_help">如何设置参数?</string>
-    <string name="etc_transfer_advanced_setting">高级选项</string>
-    <string name="etc_transfer_hex_data">十六进制数据</string>
-    <string name="etc_transfer_next">下一步</string>
-    <string name="etc_transfer_gas_slow">慢</string>
-    <string name="etc_transfer_gas_quick">快</string>
-    <string name="etc_transfer_ether_unit">&#160;ether</string>
 
-    <string name="property_detail_title">ETC</string>
-    <string name="property_detail_transfer">转账</string>
-    <string name="property_detail_gathering">收款</string>
+    <string name="sample_key_words" translatable="false">angry teant organ novel angle hat siren matter mechanit tent biology husband</string>
+    <string name="sample_date_time" translatable="false">2018-12-12 12:12</string>
+    <string name="sample_address" translatable="false">1WJKSIJAFAJSKAJSIFJFSJ</string>
+    <string name="sample_balance" translatable="false">0.0</string>
+    <string name="sample_notify" translatable="false">Congratulation to user 157****4513, you have mined 0.5 BTC</string>
+    <string name="sample_phone1" translatable="false">137****5721</string>
+    <string name="sample_phone" translatable="false">17607353571</string>
+    <string name="sample_nickname" translatable="false">Zhang Dajin</string>
+    <string name="sample_hashrate" translatable="false">Hashrate%1$d</string>
+    <string name="sample_asset" translatable="false">Mining Asset (CNY): 0.0</string>
+    <string name="sample_myAddress" translatable="false">My Address</string>
+    <string name="sample_how_to_load" translatable="false">\u3000\u3000 Open the JGW wallet, and create your wallet in the starting page. The wallet is created successfully after the transaction password is set; the user needs to back up the keywords according to the prompt, keywords can be used to completely control the wallet assets. JGW does not store the keywords of user wallet, and lost of keywords means lost of wallet assets, so please be sure to keep your keywords in a safe place</string>
+    <string name="os_platform" translatable="false">Android</string>
+    <string name="update_log" translatable="false">1.0.0 \n\n 1. Support the transfer in and out of Bitcoins and Ethereums;\n
+2. Realize mining function</string>
 
-    <string name="wallet_manager_create_wallet">创建钱包</string>
-    <string name="wallet_manager_load_wallet">导入钱包</string>
-    <string name="wallet_manager_title">管理钱包</string>
+    <string name="mining_working" translatable="false">Mining working</string>
+    <string name="mining_income" translatable="false">Mining income</string>
+    <string name="mining_detail" translatable="false">Mining details</string>
+    <string name="current_hashrate" translatable="false">Current hashrate</string>
+    <string name="add_hashrate" translatable="false">Add hashrate</string>
+    <string name="digital_des" translatable="false">Currency overview</string>
+    <string name="finish_task" translatable="false">Finish task</string>
+    <string name="auth" translatable="false">Identity verification</string>
 
-    <string name="news_center_all_read">全部已读</string>
-    <string name="news_center_title">消息中心</string>
+    <string name="update_photo" translatable="false">Change profile photo</string>
+    <string name="nickname" translatable="false">Nickname</string>
+    <string name="phone_number" translatable="false">Phone number</string>
 
-    <string name="system_setting_title">系统设置</string>
-    <string name="system_setting_language">多语言</string>
-    <string name="system_setting_currency">货币单位</string>
-    <string name="system_setting_web3">web3设置</string>
-    <string name="system_setting_gesture">收拾密码</string>
+    <string name="gesture_security" translatable="false">Unlock gesture</string>
+    <string name="gesture_security_des" translatable="false">Used to login and unlock JGW wallet</string>
 
-    <string name="language_setting_chinese">简体中文</string>
-    <string name="language_setting_English">English</string>
-    <string name="language_setting_save">保存</string>
+    <string name="jgw_wallet_des" translatable="false">\u3000\u3000 JGW PHone Security Wallet is a light wallet app that uses an encryption chip to store asset private keys. It is a safe for your digital assets. It can also acquire other digital assets by mining to provide you with safe, convenient and value-added digital asset management. .</string>
+    <string name="version_log" translatable="false">Version log</string>
+    <string name="check_and_update" translatable="false">Check updates</string>
 
-    <string name="currency_unit_setting_cny">CNY</string>
-    <string name="currency_unit_setting_usd">USD</string>
+    <string name="how_to_load" translatable="false">How to load a wallet</string>
+    <string name="connect_service" translatable="false">Contact customer service</string>
 
-    <string name="web3_setting_wallet_service_url">WALLET SERVICE URL</string>
-    <string name="web3_setting_wallet_service_url_hint">https://web3.token.im</string>
-    <string name="web3_setting_reset_url">设置为默认的URL</string>
-    <string name="trading_record_title">交易记录</string>
-    <string name="switch_wallet_title">切换账户</string>
+    <string name="verify_gesture_security" translatable="false">Verify gesture password</string>
+    <string name="set_gesture_security_first" translatable="false">Please set your gesture password first!</string>
+    <string name="set_gesture_security" translatable="false">Set your gesture password</string>
+    <string name="set_gesture_security_success" translatable="false">Gesture password successfully set</string>
+    <string name="draw_gesture_security" translatable="false">Please draw your gesture password</string>
+    <string name="draw_exist_gesture_security" translatable="false">Please enter the old gesture password</string>
+    <string name="draw_gesture_security_again" translatable="false">Please draw the gesture password again</string>
+    <string name="second_gesture_security_error" translatable="false">Inconsistent gesture passwords</string>
+    <string name="gesture_security_error" translatable="false">Wrong gesture password</string>
+    <string name="pwd_error" translatable="false">Wrong password</string>
 
-    <string name="wallet_backup_tips1">最后一步：立即备份你的钱包！</string>
-    <string name="wallet_backup_tips2">备份钱包：导出「助记词」并抄写到安全的地方，千万不要保存到网络上，然后尝试转入、转出小额资产开始使用.</string>
-    <string name="wallet_backup_backup_btn">备份钱包</string>
-    <string name="wallet_backup_backup_help">查看备份详细教程</string>
+    <string name="authentication" translatable="false">Real name authentication</string>
+    <string name="write_auth_info" translatable="false">Please enter your real name information</string>
+    <string name="write_name" translatable="false">Enter name</string>
+    <string name="write_name_hint" translatable="false">Please enter your real name</string>
+    <string name="write_id_number" translatable="false">Please enter your ID card number</string>
+    <string name="write_id_number_hint" translatable="false">Please enter your real ID card number</string>
 
-    <string name="input_pwd_dialog_tip">请输入密码</string>
-    <string name="input_pwd_delete_tip">请慎重，此操作无法撤销</string>
-    <string name="input_pwd_dialog_confirm">确认</string>
+    <string name="jgw_phone_wallet" translatable="false">JGW Phone Wallet</string>
+    <string name="jgw_feature" translatable="false">Hardware encryption, perfect for mining</string>
+    <string name="jgw_feature_des" translatable="false">\u3000\u3000 Encryption chip protects your asset private key, permanently secure, and perfect for bitcoin mining</string>
+    <string name="jgw_service" translatable="false">Enquiry number: 0111-88888888</string>
+    <string name="share" translatable="false">Share</string>
 
-    <string name="mnemonic_backup_title">备份助记词</string>
-    <string name="mnemonic_backup_tips1">抄写下你的钱包助记词</string>
-    <string name="mnemonic_backup_tips2">助记词用于回复钱包或重置钱包密码，降它准确的抄写到纸上，并存放在只有你知道的安全的地方。</string>
+    <string name="phone_is_null" translatable="false">THe number shall not be null!</string>
+    <string name="verify_code_is_null" translatable="false">The verification code shall not be null!</string>
+    <string name="pwd_code_is_null" translatable="false">The password shall not be null!</string>
+    <string name="input_not_equal" translatable="false">Inconsistent entry, please re-enter!</string>
+    <string name="pwd_pwd_invalid" translatable="false">Incorrect password, please re-enter!</string>
+    <string name="payment_pwd_invalid" translatable="false">Incorrect asset password, pleas re-enter!</string>
 
-    <string name="mnemonic_backup_alert_tips">如果有人获取你的助记词将直接获取你的资产！请抄写下助记词并存放在安全的地方。</string>
-    <string name="mnemonic_backup_alert_btn">知道了</string>
-    <string name="mnemonic_backup_alert_title">请勿截图</string>
+    <string name="net_error" translatable="false">Network access error, please try again later</string>
+    <string name="empty" translatable="false">No data yet</string>
+    <string name="loading" translatable="false">Loading...</string>
+    <string name="reload" translatable="false">Please try again</string>
+    <string name="no_net" translatable="false">Network is not available, please check your network</string>
 
-    <string name="verify_backup_tip1">确认你的钱包助记词</string>
-    <string name="verify_backup_tip2">请按顺序点击助记词，以确认你的备份助记词正确。</string>
-    <string name="verify_backup_failed">备份失败，请检查你的助记词</string>
+    <string name="request_photo_permission" translatable="false">The app requires the following permissions for running</string>
+    <string name="resend_notice" translatable="false"> Resend in  %1$ds</string>
+    <string name="record" translatable="false">Record</string>
+    <string name="id_auth_one" translatable="false">1/2 steps</string>
+    <string name="id_auth_two" translatable="false">2/2 steps</string>
+    <string name="id_photo_notice" translatable="false">Upload the front and back of the ID card, please ensure that the photo is clearly identifiable</string>
+    <string name="id_front_notice" translatable="false">Upload the front of your ID card</string>
+    <string name="id_back_notice" translatable="false">Upload the back of your ID card</string>
+    <string name="load_from_album" translatable="false">Load from album</string>
+    <string name="submit" translatable="false">Submit</string>
 
-    <string name="load_wallet_title">导入钱包</string>
-    <string name="load_wallet_btn">开始导入</string>
-    <string name="load_wallet_indicator_mnemonic">助记词</string>
-    <string name="load_wallet_indicator_official">官方钱包</string>
-    <string name="load_wallet_indicator_private_key">私钥</string>
-    <string name="load_wallet_indicator_observer">观察</string>
+    <!-- Etherum Wallet Start-->
+    <string name="eth_wallet_not_found" translatable="false">Wallet file not found</string>
+    <string name="notification_transferfail" translatable="false">Transfer Failed</string>
+    <string name="notification_transferingticker" translatable="false">Transferring Ether…</string>
+    <string name="notification_transfersuc" translatable="false">Transfer successful</string>
+    <string name="notification_transfering_title" translatable="false">Transferring Ether</string>
+    <string name="notification_might_take_a_minute" translatable="false">This might take a minute</string>
+    <string name="succes" translatable="false">Confirm</string>
+    <string name="address_empty" translatable="false">The address shall not be null</string>
+    <string name="address_is_self" translatable="false">The receiving address shall not be yourself</string>
+    <string name="address_wrong" translatable="false">Illegal address</string>
+    <string name="type_not_find" translatable="false">Currency type not supported</string>
+    <string name="send_amount_empty" translatable="false">Please enter the transfer amount</string>
+    <string name="request_permission" translatable="false">The following permissions are required to run the app</string>
+    <string name="password_wrong" translatable="false">Incorrect password</string>
+    <string name="clip_data_success" translatable="false">Address successfully copied</string>
 
-    <string name="load_wallet_by_mnemonic_hint">助记词，按空格分隔</string>
-    <string name="load_wallet_by_mnemonic_input_tip">请检查您的助记词</string>
-    <string name="load_wallet_by_mnemonic_standard">m/44\'/60\'/0\'/0/0</string>
-    <string name="load_wallet_by_mnemonic_standard_ledger">m/44\'/60\'/0\'/0</string>
-    <string name="load_wallet_by_mnemonic_standard_custom">m/44\'/60\'/1\'/0/0</string>
-    <string name="load_wallet_by_mnemonic_standard_jaxx_option">m/44\'/60\'/0\'/0/0 Jaxx,Metamask(ETH)</string>
-    <string name="load_wallet_by_mnemonic_standard_ledger_option">m/44\'/60\'/0\'/0 Ledger (ETH)</string>
-    <string name="load_wallet_by_mnemonic_standard_custom_option">m/44\'/60\'/1\'/0/0 自定义路径</string>
-    <string name="load_wallet_by_mnemonic_help">什么是助记词？</string>
-    <string name="load_wallet_already_exist">钱包以存在</string>
+    <string name="send_eth_result_success" translatable="false">Ethereum successfully sent</string>
+    <string name="send_eth_result_fail" translatable="false">Ethereum sending failed</string>
+    <!-- Etherum Wallet End-->
 
-    <string name="load_wallet_by_official_wallet_keystore_hint">keystore 文本内容</string>
-    <string name="load_wallet_by_official_wallet_keystore_tip">直接复制粘贴以太坊官方钱包keystore文件内容至输入框。或者通过生成keystore内容的二维码，扫描录入。</string>
-    <string name="load_wallet_by_official_wallet_help">什么是keystore？</string>
-    <string name="load_wallet_by_official_wallet_keystore_input_tip">keystore文件无效</string>
+    <string name="copy_success" translatable="false">Successfully copied</string>
 
-    <string name="load_wallet_by_private_key_input_tip">无效的私钥</string>
-    <string name="load_wallet_by_private_key_hint">明文私钥</string>
-    <string name="load_wallet_by_private_key_help">什么是私钥？</string>
+    <!--  BTC Start -->
+    <string name="back_up_wallet" translatable="false">Back up wallet</string>
+    <string name="write_down_backup_passphrase_suggestion" translatable="false">Write down or memorize your 12 word wallet backup passphrase which can be found in settings. Your wallet backup passphrase is needed to recover your bitcoins.</string>
+    <string name="dont_remind_me" translatable="false">Don\'t remind me</string>
+    <string name="remind_me_later" translatable="false">Remind me later</string>
+    <string name="warning" translatable="false">Warning</string>
+    <string name="send_to_reusable_address_warning" translatable="false">You are making payment to a reusable address. Please make sure that the recipient can see your payment.</string>
+    <string name="msore_funds_needed" translatable="false">You have %1$s，you need %2$s。（including transaction fee）</string>
+    <string name="funds_may_be_pending_confirmation" translatable="false">Some funds are still in pending state and are not available for transaction. (Please check your account history）The available balance in your account is %1$s</string>
+    <string name="insufficient_funds_dust" translatable="false">Insufficient balance. The account includes bitcoin dust. You can only send %1$s.</string>
+    <string name="insufficient_funds_account_balance" translatable="false">Insufficient balance. You need %2$s, you balance is %1$s.</string>
+    <string name="cannot_create_transactions_with_outputs_less_then" translatable="false">Cannot create transactions with outputs less than %1$s</string>
+    <string name="send_coin_success" translatable="false">Successfully sent, please wait for network verification</string>
+    <string name="send_coin_fail" translatable="false">Sending failed, please try again</string>
 
-    <string name="load_wallet_by_observer_tip">观察钱包不需要导入私钥，只导入钱包地址，进行日常查看账户、交易和接受通知。大额资金的私钥建议使用冷钱包或硬件钱包管理，避免泄漏被盗。</string>
-    <string name="load_wallet_by_observer_hint">扫码或输入钱包地址</string>
-    <string name="load_wallet_by_observer_attention">注意：观察钱包发送交易时需要冷钱包配合签名。你可以使用另一台闲置手机，开飞行模式作为冷钱包，导入钱包私钥，配合离线签名。</string>
 
-    <string name="wallet_detail_wallet_name">钱包名</string>
-    <string name="wallet_detail_modify_pwd">修改密码</string>
-    <string name="wallet_detail_derive_private_key">导出私钥</string>
-    <string name="wallet_detail_derive_keystore">导出keystore</string>
-    <string name="wallet_detail_delete_wallet">删除钱包</string>
-    <string name="wallet_detail_save_success">保存成功</string>
-    <string name="wallet_detail_wrong_pwd">密码错误</string>
+    <!--  BTC End -->
 
-    <string name="modify_password_title">更改密码</string>
-    <string name="modify_password_old_pwd">当前密码</string>
-    <string name="modify_password_new_pwd">新密码</string>
-    <string name="modify_password_old_pwd_again">重复新密码</string>
-    <string name="modify_password_tip">忘记密码？导入助记词或私钥可重置密码。</string>
-    <string name="modify_password_import">马上导入</string>
-    <string name="modify_password_complete">完成</string>
-    <string name="modify_password_pwd_alert1">请输入原密码</string>
-    <string name="modify_password_alert2">请输入新密码</string>
-    <string name="modify_password_alert3">请再次输入新密码</string>
-    <string name="modify_password_alert4">原密码错误</string>
-    <string name="modify_password_alert5">新密码两次输入不一致</string>
-    <string name="modify_password_success">修改密码成功</string>
+    <string name="device_rooted_description" translatable="false">Your device seems to be rooted. Please note that the funds stored on a root device are not secure, and there may be stability issues.</string>
 
-    <string name="derive_private_key_alert">安全警告：私钥未经加密，导出存在风险，建议使用助记词和keystore进行备份</string>
-    <string name="derive_private_key_copy_btn">复制</string>
-    <string name="derive_private_key_already_copy_btn">已复制</string>
+    <!--@PermissionsDenied({MainActivity.READ_EXTERNAL_STORAGE_CODE, MainActivity.WRITE_EXTERNAL_STORAGE_CODE-->
+    <!--, MainActivity.ACCESS_NETWORK_STATE_CODE, MainActivity.CHANGE_NETWORK_STATE_CODE, MainActivity.CHANGE_WIFI_STATE_CODE, MainActivity.CAMERA_CODE-->
 
-    <string name="derive_keystore_title">导出keystore文件</string>
-    <string name="derive_keystore_keystore">keystore 文件</string>
-    <string name="derive_keystore_qrcode">二维码</string>
-    <string name="derive_keystore_tip_title">离线保存</string>
-    <string name="derive_keystore_tip">请复制粘贴Keystore文件到安全、离线的地方保存。切勿保存至邮箱、记事本、网盘、聊天工具等，非常危险</string>
-    <string name="derive_keystore_tip2">请勿通过网络工具传输 Keystore文件，一旦被黑客获取将造成不可晚会的资产损失。建议离线设备通过扫二维码方式传输。</string>
-    <string name="derive_keystore_tip3">如需在线保存，则建议使用安全等级更高的 1Password 等密码保管软件保存 Keystore。</string>
-    <string name="derive_keystore_tip4">二维码禁止保存、截图、以及拍照、仅供用户在安全环境下直接扫描来方便的导入钱包。</string>
-    <string name="derive_keystore_tip5">请在确保四周无人及无摄像头的情况下使用。二维码一旦被人获取将造成不可挽回的资产损失。</string>
-    <string name="derive_keystore_tip_title2">请勿使用网络传输</string>
-    <string name="derive_keystore_tip_title3">密码保险箱保存</string>
-    <string name="derive_keystore_tip_title4">仅供直接扫描</string>
-    <string name="derive_keystore_tip_title5">在安全环境下使用</string>
-    <string name="derive_keystore_copy">复制 Keystore</string>
+    <string name="rquest_permission_read_storage" translatable="false">To read the wallet, the app needs the file reading permission</string>
+    <string name="rquest_permission_write_storage" translatable="false">To store the wallet, the app needs the file reading permission</string>
+    <string name="rquest_permission_access_network_state" translatable="false">Synchronizing data requires network permission</string>
+    <string name="rquest_permission_change_network_state" translatable="false">Synchronizing data requires network permission</string>
+    <string name="rquest_permission_change_wifi_state" translatable="false">Synchronizing data requires network permission</string>
+    <string name="rquest_permission_camera" translatable="false">QR code scanning requires camera permission</string>
+    <string name="rquest_permission_log" translatable="false">Error collection requires log permission</string>
 
-    <string name="deriving_wallet_tip">导出钱包中…</string>
-    <string name="loading_wallet_tip">导入钱包中…</string>
-    <string name="deleting_wallet_tip">删除钱包中…</string>
-    <string name="creating_wallet_tip">创建钱包中…</string>
-    <string name="saving_wallet_tip">保存钱包中…</string>
 
-    <string name="keep_on_develop">"继续更新…"</string>
+    <string name="passphrase_err" translatable="false">Incorrect keywords</string>
+    <string name="replace_wallet" translatable="false">There is already a wallet, do you want to delete the current wallet?</string>
+    <string name="recover_wallet_wait" translatable="false">Wallet recovery in progress, please wait...</string>
+
+
+    <string name="jgw_query_balance_coin_eror" translatable="false">Fail to obtain JGW balance</string>
+    <string name="jgw_get_address_err" translatable="false">Fail to obtain JGW address</string>
+    <string name="jgw_send_coin_succes" translatable="false">JGW successfully sent</string>
+    <string name="jgw_send_coin_fair_not_have_eth" translatable="false">Fail to send JGW, there is not enough ETH for transaction fee!</string>
+    <string name="jgw_send_coin_fair" translatable="false">Fail to send JGW</string>
+    <string name="id_number_is_null" translatable="false">The ID card number shall not be null!</string>
+    <string name="name_is_null" translatable="false">The name shall not be null!</string>
+    <string name="id_photo_is_null" translatable="false">The front of ID card has not been added!</string>
+    <string name="id_back_photo_is_null" translatable="false">The back of ID card has not been added!</string>
+
+    <string name="send_sucess" translatable="false">Successfully sent</string>
+
+    <string name="session_is_invalid" translatable="false">Session expired! please login again!</string>
+    <string name="nickename" translatable="false">Nickname</string>
+    <string name="nickename_is_null" translatable="false">The nickname shall not be null!</string>
+    <string name="nickename_input_hint" translatable="false">Please enter your nickname</string>
+    <string name="invite_code" translatable="false">Invitation code</string>
+    <string name="invite_friends" translatable="false">Invite friends</string>
+    <string name="invite_friends_num" translatable="false">Number of invited friends:</string>
+    <string name="complete_user_info" translatable="false">Complete user information</string>
+    <string name="hashrate_record" translatable="false">Hashrate record</string>
+    <string name="share_to" translatable="false">Share to</string>
+    <string name="feedback" translatable="false">Feedback</string>
+    <string name="personal_info" translatable="false">Personal information</string>
+    <string name="recover_faild" translatable="false">Wallet recovery failed</string>
+
+    <string name="crowd" translatable="false">Crowdfunding to </string>
+    <string name="recommend" translatable="false">Comprehensive recommendation</string>
+    <string name="last" translatable="false">Ending soon</string>
+    <string name="high_popularity" translatable="false">Most popular</string>
+    <string name="iot_crowd" translatable="false">IOT crowdfunding on-chian platform</string>
+    <string name="my_order" translatable="false">My order</string>
+    <string name="support" translatable="false">Support</string>
+
+    <string name="quit_notice" translatable="false">Click Return twice to quit!</string>
+    <string name="current_is_new" translatable="false">This is the latest version！</string>
+    <string name="app_update" translatable="false">App update</string>
+    <string name="custom_service" translatable="false">User Agreement</string>
+    <string name="download_failed" translatable="false">Download failed!</string>
+    <string name="feedback_banner" translatable="false">Your feedback is important</string>
+    <string name="feedback_input_hint" translatable="false">Please enter your question or suggestion here</string>
+    <string name="contact_way" translatable="false">Contact information</string>
+    <string name="contact_hint" translatable="false">Tel/QQ/WeChat/Email</string>
+    <string name="eth" translatable="false">ETH</string>
+    <string name="jgw" translatable="false">OCE</string>
+    <!--<string name="oce" translatable="false">OCE</string>-->
+    <string name="btc" translatable="false">BTC</string>
+
+    <string name="token_type_err" translatable="false">The token you choose is not JGW token</string>
+    <string name="sample_date" translatable="false">2018-12-12</string>
+    <string name="feedback_content_is_null" translatable="false">Feedback information cannot be empty!</string>
+    <string name="why_need_phone" translatable="false">"PHONE_STATE permission application:\n We need PHONE_STATE information"</string>
+    <string name="why_need_storage" translatable="false">sd card reading permission application:\n We need SD card reading permission to upload photos</string>
+    <string name="why_need_camera" translatable="false">Camera permission application: \n We need camera permission to take photos</string>
+    <string name="why_need_phone_state" translatable="false">Mobile phone information application:\n We need Phone State information to confirm mining identity, rejection may affect mining</string>
+    <string name="why_need_phone_state2" translatable="false">Mobile phone information application:\nWe need Phone State information to confirm mining identity, rejection may affect mining</string>
+    <string name="why_need_albums" translatable="false">Album permission application:\nWe need the album permission to access photos and files</string>
+    <string name="why_need_install" translatable="false">"Installation permission application:\n We need the installation permission to update the app."</string>
+    <string name="storage_permission_fail" translatable="false">Sd card permission application failed!</string>
+    <string name="install_permission_fail" translatable="false">Installation application permission application failed!</string>
+    <string name="camera_permission_fail" translatable="false">Camera permission application failed!</string>
+    <string name="phone_state_permission_fail" translatable="false">Mobile phone information permission application failed!</string>
+    <string name="albums_state_permission_fail" translatable="false">Album permission application failed!</string>
+    <string name="file_not_exists" translatable="false">Cannot find the file!</string>
+    <string name="cny" translatable="false">CNY</string>
+    <string name="merchants" translatable="false">Seller</string>
+    <string name="customer" translatable="false">Buyer</string>
+
+    <string name="function_is_developing" translatable="false">Function in development......Coming soon！</string>
+    <string name="total" translatable="false">Total:</string>
+    <string name="available" translatable="false">Available:</string>
+    <string name="award_pool" translatable="false">Award pool:</string>
+    <string name="overflow_level" translatable="false">Overflow level: </string>
+    <string name="crowd_progress" translatable="false">Crowdfunding progress: </string>
+    <string name="vote_level" translatable="false">Vote level</string>
+    <string name="vote_level_desc" translatable="false">After the crowdfunding successes, OCE in the award pool will be allocated according to the proportio of your voted OCE. The voting OCE will be locked in the crowdfunding period, and returned afterwards</string>
+    <string name="crowd_level" translatable="false">Crowdfunding Level</string>
+    <string name="crowd_level_desc" translatable="false">【Personal File】You will get a MuseHeart Smart Ring in Swarovski Diamond Edition at a discounted price of 2999 OCE.</string>
+    <string name="numbers" translatable="false">Amount</string>
+    <string name="day" translatable="false">Day</string>
+    <string name="last_days" translatable="false">Remaining days</string>
+    <string name="support_person_num" translatable="false">Number of supporters</string>
+    <string name="current_crowd_value_sample" translatable="false">Current crowd value</string>
+    <string name="crowd_value_sample" translatable="false">Crowdfunding OCE：2000000 OCE</string>
+    <string name="award_value_sample" translatable="false">Bonus Pool: 99999 OCE</string>
+    <string name="crowd_name_sample" translatable="false">MuseHeart Smart Ring</string>
+    <string name="crowd_des_sample" translatable="false">MuseHeart smart ring, check heart rate via mobile phone mobile
+，One-click Photo, Remote Care, One-click Message, One-click SOS, Call
+Reminder, Morse password. Also equipped with OCE green digging function</string>
+    <!--<string name="crowd_name_sample" translatable="false">MuseHeart Smart Jewelry</string>-->
+    <!--<string name="crowd_des_sample" translatable="false">MuseHeart smart ring, check heart rate via mobile phone mobile-->
+<!--，One-click Photo, Remote Care, One-click Message, One-click SOS, Call-->
+    <!-- heart rate measurement, remote care, on key photograph, one key Message, one key SOS, call reminder, mobile anti lost, Morse code -->
+<!--Reminder, Morse password. Also equipped with OCE green digging function</string>-->
+
+
+    <string name="get_oce_address_failed" translatable="false">Fail to obtain OCE address</string>
+    <string name="load_success" translatable="false">Loading Successful</string>
+    <string name="transferring" translatable="false">Transferring...</string>
+    <string name="transfer" translatable="false">Transfer</string>
+    <string name="not_support_fingerprint" translatable="false">The current device does not support fingerprints.</string>
+    <string name="set_password_first" translatable="false">Please set password first!</string>
+    <string name="add_fingerprint_first" translatable="false">Please set the fingerprint in Settings</string>
+    <string name="fingerprint_failed" translatable="false">Unlock Failed! Please try again!</string>
+    <string name="fingerprint_success" translatable="false">Unlock Successful!</string>
+    <string name="wallet_build_failed" translatable="false">Wallet Creation Failed!</string>
+    <string name="wallet_is_exist" translatable="false">Wallet Already Exist!</string>
+    <string name="choose_login_type" translatable="false">Switch verification method</string>
+    <string name="voice_login" translatable="false">Login with your voiceprint </string>
+    <string name="pwd_login" translatable="false">Login with your account and password</string>
+    <string name="voice_steps" translatable="false">
+        Steps to use the voiceprint function:\n\t
+        1、Click the voiceprint entry button below and release to start recording.\n\t
+        2、Read the four digits in the prompt box in English.\n\t
+        3、The voiceprint sample will be uploaded automatically after 4 seconds. \n\t
+        4、Follow the prompts and repeat the first three steps until the sample collection is successful or failed.
+    </string>
+    <string name="voice_steps1" translatable="false">1、Click the voiceprint entry button below and release to start recording.\n\t</string>
+    <string name="voice_steps2" translatable="false">2、Read the four digits in the prompt box in English.\n\t</string>
+    <string name="voice_steps3" translatable="false">3、The voiceprint sample will be uploaded automatically after 4 seconds. \n\t</string>
+    <string name="voice_steps4" translatable="false">4、Follow the prompts and repeat the first three steps until the sample collection is successful or failed.\n\t</string>
+    <string name="available_capital" >Available</string>
+    <string name="frozen_capital" >Frozen</string>
+    <string name="received_success" >received success!</string>
+    <string name="received_failed" >received failed!</string>
+    <string name="login_success">login success!</string>
+    <string name="login_failed" >login failed!</string>
+
 </resources>

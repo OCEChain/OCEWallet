@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@mipmap/icon_of_delete_key_words"/>
+
+    <TextView
+        android:id="@+id/tv_of_notice_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="40dp"
+        android:textSize="14sp"
+        android:text="@string/remove_key_word"
+        android:textColor="@color/red_notice"/>
+
+    <TextView
+        android:id="@+id/tv_of_notice_title_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="14sp"
+        android:text="@string/remove_key_word_description"
+        android:textColor="#636467"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="40dp"
+        android:background="#d4d6dc"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <Button
+            android:id="@+id/btn_in_dialog_of_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="@string/string_of_cancel"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:background="@null"/>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d4d6dc"/>
+
+        <Button
+            android:id="@+id/btn_in_dialog_of_ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="@string/string_of_remove"
+            android:textColor="@color/red_notice"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:background="@null"/>
+
+    </LinearLayout>
+
+</LinearLayout>

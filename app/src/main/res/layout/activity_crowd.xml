@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_of_normal_title" />
+
+    <RadioGroup
+        android:id="@+id/radio_group_button"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@android:color/white"
+        >
+        <RadioButton
+            android:id="@+id/recommend"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/recommend"
+            android:textSize="14sp"
+            android:paddingTop="4dp"
+            android:drawableBottom="@drawable/selector_of_alert_item"
+            style="@style/RadioGroupButtonStyle"
+            />
+
+        <RadioButton
+            android:id="@+id/last"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/last"
+            android:textSize="14sp"
+            android:paddingTop="4dp"
+            android:drawableBottom="@drawable/selector_of_alert_item"
+            style="@style/RadioGroupButtonStyle"
+            />
+
+        <RadioButton
+            android:id="@+id/high_popularity"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/high_popularity"
+            android:textSize="14sp"
+            android:paddingTop="4dp"
+            android:drawableBottom="@drawable/selector_of_alert_item"
+            style="@style/RadioGroupButtonStyle"
+            />
+    </RadioGroup>
+
+    <!--<FrameLayout-->
+        <!--android:id="@+id/alert_container"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="1">-->
+    <!--</FrameLayout>-->
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/rv_of_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    
+    <Button
+        android:id="@+id/btn_my_order"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:text="@string/my_order"
+        android:background="@drawable/selector_of_blue_button"/>
+
+</LinearLayout>

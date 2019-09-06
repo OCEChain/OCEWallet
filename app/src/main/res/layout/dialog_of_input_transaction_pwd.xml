@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/ll_in_sex_dialog_of_man"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <ImageView
+            android:id="@+id/iv_of_close_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_input_delete"
+            android:background="@null"/>
+
+        <TextView
+            android:id="@+id/tv_of_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_weight="1"
+            android:textColor="#636367"
+            android:text="@string/hint_input_transaction_pin"
+            android:textSize="16sp"
+            android:visibility="visible"/>
+
+    </RelativeLayout>
+
+    <com.idea.jgw.view.PayPsdInputView
+        android:id="@+id/piv_of_password"
+        android:layout_width="match_parent"
+        android:inputType="numberPassword"
+        android:layout_height="37dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:paddingTop="1dp"
+        android:layout_marginTop="48dp"
+        android:focusableInTouchMode="true"/>
+
+    <TextView
+        android:id="@+id/tv_of_of_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="38dp"
+        android:text=""
+        android:layout_marginBottom="40dp"
+        android:textColor="@color/red_notice"/>
+
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_mining_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/rl_of_title"
+        layout="@layout/layout_of_normal_title" />
+
+    <TextView
+        android:id="@+id/tv_auth_steps_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="95dp"
+        android:textColor="#193fc3"
+        android:textSize="14sp"
+        android:text="@string/id_auth_one"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_below="@id/tv_auth_steps_label"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:textColor="#636467"
+            android:textSize="14sp"
+            android:text="@string/write_auth_info"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="36dp"
+            android:textColor="#b3b5bd"
+            android:textSize="12sp"
+            android:text="@string/write_id_number"/>
+
+        <EditText
+            android:id="@+id/et_id_number"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:paddingLeft="16dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center_vertical"
+            android:inputType="number"
+            android:textColor="#b3b5bd"
+            android:textColorHint="#b3b5bd"
+            android:textSize="14sp"
+            android:hint="@string/write_id_number_hint"
+            android:background="#f6f7fa"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:textColor="#b3b5bd"
+            android:textSize="12sp"
+            android:text="@string/write_name"/>
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:paddingLeft="16dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center_vertical"
+            android:textColor="#b3b5bd"
+            android:textColorHint="#b3b5bd"
+            android:textSize="14sp"
+            android:hint="@string/write_name_hint"
+            android:background="#f6f7fa"/>
+
+        <Button
+            android:id="@+id/btn_of_next"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="120dp"
+            android:text="@string/next"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:background="@drawable/selector_of_blue_button"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

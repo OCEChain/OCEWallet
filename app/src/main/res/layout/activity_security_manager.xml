@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_of_normal_title"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_gesture_pwd"
+        android:layout_width="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_height="59dp">
+
+        <TextView
+            android:id="@+id/tv_gesture_security_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:textColor="#616367"
+            android:textSize="14sp"
+            android:text="@string/gesture_security"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_gesture_security_label"
+            android:textColor="#95969a"
+            android:textSize="14sp"
+            android:text="@string/gesture_security"/>
+        
+        <ImageButton
+            android:id="@+id/iBtn_gesture_security"
+            android:layout_width="38dp"
+            android:layout_height="21dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/selector_of_select_btn"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_gesture_security"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_below="@id/iv_of_banner"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#616367"
+            android:textSize="14sp"
+            android:text="@string/gesture_security"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_right_arrow"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/ll_gesture_security"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#d4d6dc" />
+
+    <LinearLayout
+        android:id="@+id/ll_reset_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_below="@id/ll_gesture_security"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#616367"
+            android:textSize="14sp"
+            android:text="@string/reset_login_pwd"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_right_arrow"/>
+
+    </LinearLayout>
+
+</LinearLayout>

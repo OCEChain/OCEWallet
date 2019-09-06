@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_send"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.idea.jgw.ui.wallet.SendActivity">
+
+    <ImageView
+        android:id="@+id/iv_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/banner_small"/>
+
+    <include layout="@layout/layout_of_transparent_bgl_title" />
+
+    <ImageView
+        android:id="@+id/iv_digital_logo"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp"
+        android:src="@mipmap/icon_btc_small"/>
+
+    <TextView
+        android:id="@+id/tv_balance_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_digital_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:text="@string/balance"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_of_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_balance_label"
+        android:layout_marginTop="11dp"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        android:text="@string/sample_balance"/>
+
+    <LinearLayout
+        android:id="@+id/ll_of_received_address"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/iv_top"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:textSize="12sp"
+            android:textColor="#b3b5bd"
+            android:text="@string/received_address"/>
+
+        <EditText
+            style="@style/normal_editText"
+            android:id="@+id/et_received_address"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:textColor="#b3b5bd"
+            android:textColorHint="#b3b5bd"
+            android:hint="@string/received_address_hint"/>
+
+        <ImageView
+            android:id="@+id/iv_of_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:src="@mipmap/ic_input_delete"/>
+
+        <ImageView
+            android:id="@+id/iv_of_scan_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:padding="8dp"
+            android:src="@mipmap/icon_of_scan1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/ll_of_received_address"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:textSize="12sp"
+            android:textColor="#b3b5bd"
+            android:text="@string/send_amount"/>
+
+        <EditText
+            style="@style/normal_editText"
+            android:id="@+id/et_send_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:gravity="end|center_vertical"
+            android:textSize="12sp"
+            android:textColor="#b3b5bd"
+            android:textColorHint="#b3b5bd"
+            android:hint="@string/hint_of_send_amount"
+            android:inputType="numberDecimal"/>
+
+        <TextView
+            android:id="@+id/tv_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:textSize="12sp"
+            android:textColor="#b3b5bd"
+            android:text="@string/cny_unit"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_of_send"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/ensure_send"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/selector_of_blue_button"/>
+
+</RelativeLayout>

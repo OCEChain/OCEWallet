@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="173dp" >
+
+    <LinearLayout
+        android:id="@+id/ll_in_sex_dialog_of_man"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_in_dialog_of_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_in_dialog_of_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="#636367"
+            android:text="@string/jaw_service"
+            android:textSize="16sp"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/tv_in_dialog_of_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="@string/jaw_service_tel"
+            android:textColor="#193fc3"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#d4d6dc"/>
+
+    <LinearLayout
+        android:id="@+id/ll_in_sex_dialog_of_woman"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <Button
+            android:id="@+id/btn_in_dialog_of_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="@string/string_of_cancel"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:background="@null"/>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d4d6dc"/>
+
+        <Button
+            android:id="@+id/btn_in_dialog_of_ok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="@string/call_service"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:background="@null"/>
+
+    </LinearLayout>
+
+</LinearLayout>

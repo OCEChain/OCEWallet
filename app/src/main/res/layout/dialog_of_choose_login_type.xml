@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="193dp" >
+
+    <TextView
+        android:id="@+id/tv_of_voice_login"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:textColor="#636367"
+        android:text="@string/voice_login"
+        android:textSize="14sp"
+        android:visibility="visible"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#d4d6dc"/>
+
+    <TextView
+        android:id="@+id/tv_of_pwd_login"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:textColor="#636367"
+        android:text="@string/pwd_login"
+        android:textSize="14sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#d4d6dc"/>
+
+    <TextView
+        android:id="@+id/tv_of_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:textColor="#636367"
+        android:text="@string/string_of_cancel"
+        android:textSize="14sp"/>
+
+</LinearLayout>

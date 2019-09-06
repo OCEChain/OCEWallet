@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/bg_of_create_wallet"
+    tools:context="com.idea.jgw.ui.createWallet.LoadOrCreateWalletActivity">
+
+    <ImageView
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="106dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/icon_logo"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:text="@string/app_name_zh"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:text="@string/feature"/>
+
+    <Button
+        android:id="@+id/btn_of_create_wallet"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="96dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="@string/create_wallet"
+        android:background="@mipmap/bg_of_create_wallet"/>
+
+    <Button
+        android:id="@+id/btn_of_load_wallet"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="@string/load_wallet"
+        android:background="@mipmap/bg_btn_load_wallet"/>
+
+</LinearLayout>

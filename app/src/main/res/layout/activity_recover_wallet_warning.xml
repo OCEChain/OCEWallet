@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_of_normal_title" />
+
+    <TextView
+        android:id="@+id/tv_of_create_step"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#193fc3"
+        android:textSize="14sp"
+        android:text="@string/set_transaction_pin"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/recover_wallet_warning"
+        android:textColor="#636467"
+        android:textSize="12sp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_of_cancel"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:text="@string/cancel"
+            android:background="@mipmap/bg_btn_load_wallet"/>
+
+        <Button
+            android:id="@+id/btn_of_load_wallet"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="32dp"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:text="@string/load_wallet"
+            android:background="@mipmap/bg_btn_load_wallet"/>
+
+    </LinearLayout>
+
+</LinearLayout>

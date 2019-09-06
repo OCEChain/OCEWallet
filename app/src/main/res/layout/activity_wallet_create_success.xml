@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#0f27b3" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/icon_of_create_wallet_success"/>
+
+    <TextView
+        android:id="@+id/tv_of_create_step"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#193fc3"
+        android:textSize="14sp"
+        android:text="@string/wallet_create_success"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/key_word_notice"
+        android:textColor="#636467"
+        android:textSize="12sp"/>
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/btn_restore_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textSize="14sp"
+        android:textColor="#193fc3"
+        android:gravity="center"
+        android:text="@string/restore_now"
+        android:background="@mipmap/bg_restore_key_word"/>
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="60dp"
+        android:layout_weight="0"/>
+
+</LinearLayout>

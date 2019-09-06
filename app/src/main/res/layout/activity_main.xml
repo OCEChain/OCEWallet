@@ -1,23 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.oce.ocewallet.ui.activity.MainActivity">
+    tools:context="com.idea.jgw.ui.main.MainActivity">
 
-    <com.oce.ocewallet.view.NoScrollViewPager
-        android:id="@+id/vp_home"
+    <FrameLayout
+        android:id="@+id/home_container"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1" />
+        android:layout_weight="1"
+        >
+    </FrameLayout>
 
-    <View
+    <View android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:alpha="0.6"
+        android:background="@android:color/darker_gray"
+        />
+    <RadioGroup
+        android:id="@+id/radio_group_button"
         android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/item_divider_bg_color" />
-
-    <include layout="@layout/home_bottom_navigator_layout" />
-
-
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@android:color/white"
+        >
+        <RadioButton
+            android:id="@+id/btn_of_wallet"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/wallet"
+            android:paddingTop="4dp"
+            android:drawableTop="@drawable/tab_wallet_selector"
+            style="@style/RadioGroupButtonStyle"
+            />
+        <RadioButton
+            android:id="@+id/btn_of_discovery"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/discovery"
+            android:paddingTop="4dp"
+            android:drawableTop="@drawable/tab_mining_selector"
+            style="@style/RadioGroupButtonStyle"
+            />
+        <RadioButton
+            android:id="@+id/rb_of_mine"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/mine"
+            android:paddingTop="4dp"
+            android:drawableTop="@drawable/tab_mine_selector"
+            style="@style/RadioGroupButtonStyle"
+            />
+    </RadioGroup>
 </LinearLayout>

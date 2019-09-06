@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_start">
+
+    <include
+        android:id="@+id/rl_of_title"
+        layout="@layout/layout_of_transparent_bgl_title" />
+
+    <LinearLayout
+        android:id="@+id/ll_of_phone_input"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_below="@id/rl_of_title"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="105dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@mipmap/bg_of_input">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:src="@mipmap/icon_phone"/>
+
+        <EditText
+            style="@style/normal_editText"
+            android:id="@+id/et_of_nickname"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:hint="@string/hint_of_input_phone"
+            android:inputType="number"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/iBtn_of_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:src="@mipmap/ic_input_delete"
+            android:background="@null"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_of_pwd_input"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/ll_of_phone_input"
+        android:layout_alignRight="@id/ll_of_phone_input"
+        android:layout_alignLeft="@id/ll_of_phone_input"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@mipmap/bg_of_input">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:src="@mipmap/icon_pwd"/>
+
+        <EditText
+            style="@style/normal_editText"
+            android:id="@+id/et_of_pwd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:hint="@string/hint_of_input_pwd"
+            android:inputType="number"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            style="@style/hide_pwd"
+            android:id="@+id/iBtn_of_show_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_of_forget_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_of_pwd_input"
+        android:layout_alignLeft="@id/ll_of_pwd_input"
+        android:layout_marginTop="8dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:text="@string/forget_pwd"/>
+
+    <TextView
+        android:id="@+id/tv_of_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_of_pwd_input"
+        android:layout_alignRight="@id/ll_of_phone_input"
+        android:layout_alignBottom="@id/tv_of_forget_pwd"
+        android:layout_alignTop="@id/tv_of_forget_pwd"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:textColor="#20b8ff"
+        android:text="@string/register"/>
+
+    <TextView
+        android:id="@+id/tv_of_choose_login_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_of_forget_pwd"
+        android:layout_alignLeft="@id/ll_of_pwd_input"
+        android:layout_marginTop="8dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:visibility="gone"
+        android:textSize="14sp"
+        android:textColor="#20b8ff"
+        android:text="@string/choose_login_type"/>
+
+    <Button
+        android:id="@+id/btn_of_login"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@id/ll_of_pwd_input"
+        android:layout_marginTop="260dp"
+        android:text="@string/login"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:textColor="#f3f5f7"
+        android:background="@mipmap/bg_of_next"/>
+
+</RelativeLayout>

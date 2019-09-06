@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_balance"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.idea.jgw.ui.wallet.BalanceActivity">
+
+    <ImageView
+        android:id="@+id/iv_of_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/banner"/>
+
+    <include layout="@layout/layout_of_transparent_bgl_title" />
+
+    <ImageView
+        android:id="@+id/iv_of_logo"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="58dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/icon_oce_big"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="4dp"
+        android:layout_below="@id/iv_of_logo"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/balance"/>
+
+    <ImageView
+        android:id="@+id/iv_of_divide_line"
+        android:layout_width="1px"
+        android:layout_height="32dp"
+        android:layout_below="@id/iv_of_logo"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/tv_of_usable_balance_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/iv_of_divide_line"
+        android:layout_alignTop="@id/iv_of_divide_line"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="-2dp"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="@string/available_capital"/>
+
+    <TextView
+        android:id="@+id/tv_of_usable_balance_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/tv_of_usable_balance_tag"
+        android:layout_below="@id/tv_of_usable_balance_tag"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="0dp"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/tv_of_usable_cny_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/tv_of_usable_balance_tag"
+        android:layout_below="@id/tv_of_usable_balance_value"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="0dp"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:text="0CNY"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_of_frozen_balance_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/iv_of_divide_line"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:layout_alignTop="@id/tv_of_usable_balance_tag"
+        android:gravity="center"
+        android:text="@string/frozen_capital"/>
+
+    <TextView
+        android:id="@+id/tv_of_frozen_balance_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="19sp"
+        android:textColor="@color/white"
+        android:layout_alignLeft="@id/tv_of_frozen_balance_tag"
+        android:layout_alignTop="@id/tv_of_usable_balance_value"
+        android:gravity="center"
+        android:padding="0dp"
+        android:text="0"
+        android:drawableRight="@color/black"/>
+
+    <LinearLayout
+        android:id="@+id/radio_group_button"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btn_of_send"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/send"
+            android:gravity="center_horizontal"
+            android:textSize="10sp"
+            android:textColor="@color/white"
+            android:paddingTop="2dp"
+            android:drawableTop="@drawable/tab_send_selector"
+            android:background="#dab866"
+            />
+
+        <Button
+            android:id="@+id/btn_of_received"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/received"
+            android:textColor="@color/white"
+            android:gravity="center_horizontal"
+            android:textSize="10sp"
+            android:paddingTop="2dp"
+            android:drawableTop="@drawable/tab_received_selector"
+            android:background="#0f27b3"
+            />
+    </LinearLayout>
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/rv_of_transfer_record"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/iv_of_banner"
+        android:layout_above="@id/radio_group_button"
+        android:background="@color/white"/>
+
+</RelativeLayout>

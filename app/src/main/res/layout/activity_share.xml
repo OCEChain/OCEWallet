@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/rl_of_title"
+        layout="@layout/layout_of_normal_title" />
+    
+    <ImageView
+        android:id="@+id/iv_content_bg"
+        android:layout_width="264dp"
+        android:layout_height="353dp"
+        android:layout_centerInParent="true"
+        android:background="#f6f7fa"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@id/iv_content_bg"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="38dp"
+        android:layout_below="@id/iv_hashrate_logo"
+        android:textColor="#636467"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:text="@string/jgw_phone_wallet"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@id/iv_content_bg"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="57dp"
+        android:layout_below="@id/iv_hashrate_logo"
+        android:textColor="#b3b5bd"
+        android:textSize="14sp"
+        android:text="@string/jgw_feature"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@id/iv_content_bg"
+        android:layout_alignLeft="@id/iv_content_bg"
+        android:layout_alignRight="@id/iv_content_bg"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="92dp"
+        android:layout_below="@id/iv_hashrate_logo"
+        android:textColor="#b3b5bd"
+        android:textSize="12sp"
+        android:text="@string/jgw_feature_des"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@id/iv_content_bg"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="32dp"
+        android:layout_below="@id/iv_hashrate_logo"
+        android:textColor="#b3b5bd"
+        android:textSize="12sp"
+        android:visibility="gone"
+        android:text="@string/jgw_service"/>
+
+    <TextView
+        android:id="@+id/tv_invite_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@id/iv_content_bg"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="64dp"
+        android:layout_below="@id/iv_hashrate_logo"
+        android:textColor="#193fc3"
+        android:textSize="24sp"
+        android:text=""/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:layout_above="@id/tv_invite_code"
+        android:textColor="#193fc3"
+        android:textSize="14sp"
+        android:text="@string/invite_code"/>
+
+    <Button
+        android:id="@+id/btn_of_share"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/share"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/selector_of_blue_button"/>
+
+</RelativeLayout>

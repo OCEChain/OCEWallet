@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="205dp"
+    android:background="@mipmap/banner"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="66dp"
+        android:text="@string/total_asset"
+        android:textColor="#f3c75d"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tx_sum_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="0"
+        android:textColor="#ffffff"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/tv_of_total_asset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:drawableLeft="@mipmap/icon_of_unencrypted"
+        android:gravity="center"
+        android:text="@string/asset_protected"
+        android:textColor="#FFF"
+        android:textSize="10sp" />
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@mipmap/icon_of_fail"/>
+
+    <TextView
+        android:id="@+id/tv_of_notice_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="40dp"
+        android:textSize="14sp"
+        android:text="@string/forbid_screen_shot"
+        android:textColor="@color/red_notice"/>
+
+    <TextView
+        android:id="@+id/tv_of_notice_title_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="14sp"
+        android:text="@string/forbid_screen_description"
+        android:textColor="#636467"/>
+
+    <Button
+        android:id="@+id/btn_in_dialog_of_ok"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:text="@string/understand"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textColor="#193fc3"
+        android:background="@null"/>
+
+</LinearLayout>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_transcation_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.idea.jgw.ui.wallet.TransactionDetailActivity">
+
+    <include layout="@layout/layout_of_normal_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:background="#f6f7fa">
+
+        <TextView
+            android:id="@+id/tv_send_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="17dp"
+            android:text="@string/send"
+            android:textColor="#959699"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_send_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="17dp"
+            android:text="@string/sample_date_time"
+            android:textColor="#959699"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_send_label"
+            android:layout_alignRight="@id/tv_send_time"
+            android:layout_below="@id/tv_send_label"
+            android:layout_marginTop="8dp"
+            android:background="@color/transparent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_coin_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_oce_small" />
+
+            <TextView
+                android:id="@+id/tv_transaction_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="30"
+                android:textColor="#193fc3"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv_transaction_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/success"
+                android:textColor="#959699"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="122dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:background="#f6f7fa"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
+
+        <TextView
+            android:id="@+id/tv_send_address_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="@string/send_address"
+            android:textColor="#636467"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_send_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_send_address_label"
+            android:layout_marginTop="6dp"
+            android:text="@string/sample_address"
+            android:textColor="#636467"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_copy_send_address"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tv_send_address"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/drawable_of_copy"
+            android:gravity="center"
+            android:text="@string/copy"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_received_address_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_send_address"
+            android:layout_marginTop="24dp"
+            android:text="@string/received_address"
+            android:textColor="#636467"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_received_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_received_address_label"
+            android:layout_marginTop="6dp"
+            android:text="@string/sample_address"
+            android:textColor="#636467"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_copy_received_address"
+            android:layout_width="35dp"
+            android:layout_height="17dp"
+            android:layout_above="@id/tv_received_address"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/drawable_of_copy"
+            android:gravity="center"
+            android:text="@string/copy"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="118dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:background="#f6f7fa"
+        android:orientation="vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
+
+        <TextView
+            android:id="@+id/tv_transaction_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="@string/transaction_id"
+            android:textColor="#636467"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_commission"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="@string/commission"
+            android:textColor="#636467"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_chain_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="@string/chain_number"
+            android:textColor="#636467"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_my_address"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_of_normal_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:background="#f6f7fa">
+
+        <TextView
+            android:id="@+id/tv_address_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#636467"
+            android:layout_marginTop="22dp"
+            android:text="@string/sample_myAddress"/>
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_address_name"
+            android:textSize="12sp"
+            android:textColor="#636467"
+            android:layout_marginTop="6dp"
+            android:text="@string/sample_address"/>
+
+        <TextView
+            android:id="@+id/tv_copy_send_address"
+            android:layout_width="35dp"
+            android:layout_height="17dp"
+            android:layout_alignParentRight="true"
+            android:layout_above="@id/tv_address"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textColor="#ffffff"
+            android:text="@string/copy"
+            android:background="@drawable/drawable_of_copy"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="54dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/red_notice"/>
+
+    <TextView
+        android:id="@+id/tv_of_address_name2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#95969a"
+        android:textSize="14sp"
+        android:text="@string/sample_myAddress"/>
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/btn_of_share_address"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/login"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:textColor="#f3f5f7"
+        android:background="@mipmap/bg_of_next"/>
+
+    <com.idea.jgw.view.LocusPassWordView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

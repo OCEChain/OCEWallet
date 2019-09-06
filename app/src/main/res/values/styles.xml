@@ -1,65 +1,97 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:statusBarColor">#0000</item>
+        <!--<item name="android:background">#fff</item>-->
     </style>
 
-    <style name="AppTheme.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-    </style>
-
-    <!-- 自定义loading dialog -->
-    <style name="loading_dialog" parent="android:style/Theme.Dialog">
+    <!-- dialog -->
+    <style name="defaultDialog" parent="android:Theme.Dialog">
+        <!-- 边框 -->
         <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 无标题 -->
         <item name="android:windowNoTitle">true</item>
-        <item name="android:windowIsTranslucent">false</item><!--半透明-->
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@drawable/bg_of_radius_dialog</item>
+        <!-- 模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!--普通dialog-->
+    <style name="CustomProgressDialog" parent="@style/CustomDialog">
         <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
         <item name="android:windowIsFloating">true</item>
-        <item name="android:backgroundDimEnabled">false</item><!--模糊-->
         <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
     </style>
 
-    <style name="Theme.ToolBar.Menu" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
-        <!-- 设置-弹窗的背景-颜色-->
-        <item name="android:colorBackground">@color/common_bg</item>
-        <!-- 字体的颜色-->
-        <item name="android:textColor">@color/common_h1</item>
-        <!-- 字体大小-->
+    <style name="RadioGroupButtonStyle" >
+        <!-- 这个属性是去掉button 默认样式-->
+        <item name="android:button">@null</item>
+
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/color_selector</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="pin_style">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
         <item name="android:textSize">16sp</item>
-        <!-- 用于替换菜单的三个小白点，换成自已的图片-->
-        <item name="actionOverflowButtonStyle">@style/ActionButton.Overflow.Menu</item>
-        <!--用于控制menu弹出的位置，位于toolbar的下面，而不是上面-->
-        <item name="actionOverflowMenuStyle">@style/OverflowMenuStyle</item>
-        <!-- 用于修改item默认的分割线-->
-        <item name="android:dropDownListViewStyle">@style/dropDownStyle</item>
-        <item name="dropDownListViewStyle">@style/dropDownStyle</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@drawable/bg_of_black_rectangle</item>
+        <item name="android:inputType">numberPassword</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLength">1</item>
     </style>
 
-    <style name="ActionButton.Overflow.Menu" parent="android:style/Widget.Holo.Light.ActionButton.Overflow">
-        <item name="android:src">@mipmap/ic_moreoverflow_mtrl_alpha</item>
+    <style name="normal_editText">
+        <item name="android:background">@null</item>
+        <item name="android:textCursorDrawable">@mipmap/ic_of_cursor</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">#b3b5bd</item>
+        <item name="android:textColorHint">#d4d6dc</item>
+        <item name="android:textSize">14sp</item>
     </style>
 
-    <!--把该属性改为false即可使menu位置位于toolbar之下-->
-    <style name="OverflowMenuStyle" parent="Widget.AppCompat.Light.PopupMenu.Overflow">
-        <item name="overlapAnchor">false</item>
+    <style name="hide_pwd">
+        <item name="android:background">@null</item>
+        <item name="android:src">@drawable/selector_of_pwd_hide</item>
+        <item name="android:padding">8dp</item>
     </style>
 
-    <!--用于修改popmenu的分割线-->
-    <style name="dropDownStyle" parent="android:style/Widget.Holo.ListView.DropDown">
-        <item name="android:listSelector">@drawable/touch_bg</item>
-        <item name="android:divider">@color/common_divider_narrow</item>
-        <item name="android:dividerHeight">0.5dp</item>
-    </style>
+    <declare-styleable name="floatView">
+        <attr name="parentViewBackground" format="reference"/>
+        <attr name="childViewBackground" format="reference"/>
+        <attr name="childTextColor" format="color"/>
+        <attr name="defaultViewText" format="string"/>
+        <attr name="chidTextSize" format="dimension"/>
+    </declare-styleable>
 
-
-    <style name="AnimBottom" parent="@android:style/Animation">
-        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
-        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
-    </style>
+    <declare-styleable name="ColorProgressBar">
+        <attr name="firstColor" format="color"/>
+        <attr name="secondColor" format="color"/>
+        <attr name="circleWidth" format="dimension"/>
+    </declare-styleable>
 
 </resources>

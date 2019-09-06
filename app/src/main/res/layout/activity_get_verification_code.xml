@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_get_verfication_code"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.idea.jgw.ui.login.GetVerificationCodeActivity">
+
+    <include
+        android:id="@+id/rl_of_title"
+        layout="@layout/layout_of_normal_title" />
+
+    <LinearLayout
+        android:id="@+id/ll_of_phone_input"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_below="@id/rl_of_title"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@mipmap/bg_of_input">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:src="@mipmap/icon_phone"/>
+
+        <EditText
+            style="@style/normal_editText"
+            android:id="@+id/et_of_nickname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_of_input_phone"
+            android:inputType="phone"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/iBtn_of_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:src="@mipmap/ic_input_delete"
+            android:background="@null"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_of_pwd_input"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/ll_of_phone_input"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@mipmap/bg_of_input">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/icon_security_code"/>
+
+        <EditText
+            style="@style/normal_editText"
+            android:id="@+id/et_of_security_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_of_input_security"
+            android:inputType="number"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/tv_of_get_security_code"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/send_security"
+            android:gravity="center"
+            android:clickable="true"
+            android:padding="8dp"
+            android:textSize="12sp"
+            android:textColor="#193fc3"
+            android:background="@null"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_of_next"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_below="@id/ll_of_pwd_input"
+        android:layout_marginTop="156dp"
+        android:gravity="center"
+        android:text="@string/next"
+        android:textSize="14sp"
+        android:textColor="#f3f5f7"
+        android:background="@mipmap/bg_of_next"/>
+
+</RelativeLayout>

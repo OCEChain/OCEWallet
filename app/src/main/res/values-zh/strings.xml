@@ -1,0 +1,400 @@
+<resources>
+    <string name="app_name" >OCE</string>
+    <string name="login" >登录</string>
+    <string name="agree_agreement" >同意遵守甲骨文《用户协议》</string>
+    <string name="customer_service" >联系客服</string>
+    <string name="register" >注册</string>
+    <string name="forget_pwd" >忘记密码</string>
+    <string name="next" >下一步</string>
+    <string name="set_login_pwd" >设置登录密码</string>
+    <string name="reset_login_pwd" >重置登录密码</string>
+    <string name="login_pwd_description" >登录密码在每次登录甲骨文钱包时使用</string>
+    <string name="reset_now" >立即重置</string>
+    <string name="ok" >确认</string>
+    <string name="cancel" >取消</string>
+    <string name="verify_verification_code" >校验验证码</string>
+
+    <string name="jaw_service" >甲骨文客服电话</string>
+    <string name="jaw_service_tel" >400 088 8888</string>
+    <string name="string_of_cancel" >取消</string>
+    <string name="string_of_remove" >移除</string>
+    <string name="call_service" >拨打</string>
+    <string name="pick_photo_from_album" >从相册导入</string>
+    <string name="take_photo" >拍照</string>
+
+    <string name="app_name_zh" >甲骨文钱包</string>
+    <string name="feature" >硬件加密 挖矿神器</string>
+    <string name="create_wallet" >创建钱包</string>
+    <string name="load_wallet" >导入钱包</string>
+    <string name="wallet_create_success" >钱包创建成功</string>
+    <string name="restore_now" >立即备份</string>
+    <string name="load" >导入</string>
+
+    <string name="input_key_word_description" >请输入助记词，12个英文单词，按空格分隔</string>
+    <string name="copy_key_word_description" >助记词用户恢复钱包，请抄写助记词，存放到安全的地方！</string>
+    <string name="forbid_screen_description" >截图会给别人获取助记词的机会，请抄写助记词，存放到安全的地方！</string>
+    <string name="remove_key_word_description" >助记词验证正确，为防止他人窃取助记词，请从甲骨文钱包里删除助记词！</string>
+    <string name="copy_key_word" >请抄写助记词</string>
+    <string name="input_key_word" >输入助记词</string>
+    <string name="check_key_word" >确认助记词</string>
+    <string name="remove_key_word" >移除助记词</string>
+    <string name="forbid_screen_shot" >请勿截图</string>
+    <string name="understand" >知道了</string>
+    <string name="check_key_word_description" >请根据抄写的助记词，按照顺序点击</string>
+
+    <string name="finger_print_verify" >指纹验证</string>
+    <string name="password_verify" >密码验证</string>
+    <string name="password_verify_tip" >请验证密码</string>
+    <string name="finger_print_verify_tip" >请验证指纹验证</string>
+    <string name="set_transaction_pin" >设置资产密码</string>
+    <string name="finger_print_verify_desc" >由于您长时间未使用App，为了您的账户安全，App已锁定，请验证指纹或者通过登录密码验证解锁</string>
+    <string name="reset_transaction_pin" >重置资产密码</string>
+    <string name="set_transaction_pin_notice" >\u3000\u3000资产密码在资产变动时使用，是您资产安全的重要保障。甲骨文服务器不存储资产密码，只存储在甲骨文手机加密芯片里，设置完成后不能修改，只能通过导入钱包重新设置！</string>
+    <string name="key_word_notice" >\u3000\u3000助记词泄露就等于泄露钱包全部资产，且助记词是恢复钱包的唯一方式，请务必备份！</string>
+    <string name="ensure_transaction_pin" >确认资产密码</string>
+    <string name="ensure_transaction_pin_notice" >确认资产密码提醒。。。</string>
+    <string name="recover_wallet_warning" >\u3000\u3000资产密码保存在本地，只能通过导入钱包重设，请重新导入钱包，重新设置资产密码。甲骨文钱包只支持一个钱包，导入新钱包后原钱包将被替代</string>
+
+    <string name="wallet" >钱包</string>
+    <string name="discovery" >挖矿</string>
+    <string name="mine" >我的</string>
+    <string name="total_asset" >总资产(CNY)</string>
+    <string name="asset_protected" >资产已芯片加密</string>
+    <string name="asset_unprotected" >资产未使用芯片加密</string>
+    <string name="security_manager" >安全管理</string>
+    <string name="share_to_friends" >分享好友</string>
+    <string name="base_task" >基础任务</string>
+    <string name="help" >帮助中心</string>
+    <string name="about_us" >关于我们</string>
+    <string name="ram_share" >内存分享</string>
+    <string name="chain_on" >上链众筹</string>
+    <string name="data_transfer_platform" >数据交易平台</string>
+    <string name="status_loading" >正在加载验证数据...请稍后！</string>
+    <string name="status_say" >请点击按钮，然后松开，并用英文说出下面的数字</string>
+    <string name="status_recording" >正在录音，请用英文说出下面数字</string>
+    <string name="status_uploading" >正在上传录音，请稍后...</string>
+    <string name="voice_input" >声纹录入</string>
+    <string name="voice_verify" >声纹验证</string>
+    <string name="toast_enroll_success" >声纹注册成功！</string>
+    <string name="voice_register_failed" >声纹注册失败！</string>
+    <string name="toast_verify_failed" >声纹验证失败！</string>
+    <string name="voice_verify_success" >声纹验证成功！</string>
+    <string name="vigo_get_id_failed" >声纹服务连接失败！</string>
+    <string name="audio_permission_failed" >语音权限申请失败！</string>
+    <!--<string name="status_loading">Loading, please wait...</string>-->
+    <!--<string name="status_say">Please press button and say the phrase:</string>-->
+    <!--<string name="status_recording">Recording, please speak now...</string>-->
+    <!--<string name="status_uploading">Uploading, please wait...</string>-->
+
+    <string name="transaction_detail" >交易详情</string>
+    <string name="success" >成功</string>
+    <string name="fail" >失败</string>
+    <string name="send" >发送</string>
+    <string name="received" >接收</string>
+    <string name="ensure_send" >确认发送</string>
+    <string name="send_amount" >发送金额</string>
+    <string name="send_address" >发送地址</string>
+    <string name="received_address" >接收地址</string>
+    <string name="transaction_id" >交易id</string>
+    <string name="commission" >矿工费</string>
+    <string name="chain_number" >区域链高度</string>
+    <string name="cny_unit" >CNY</string>
+    <string name="copy" >复制</string>
+    <string name="share_address" >分享地址</string>
+    <string name="mine_address" >我的地址</string>
+
+    <string name="balance" >余额</string>
+    <string name="agree_service_manager" >请先同意甲骨文用户协议！</string>
+
+
+    <string name="hint_of_input_phone" >请输入手机号</string>
+    <string name="hint_of_input_security" >请输验证码</string>
+    <string name="hint_of_input_pwd" >请输登录密码</string>
+    <string name="hint_of_set_pwd" >请输入6-16位密码</string>
+    <string name="hint_of_invite_code" >请输入邀请码(选填)</string>
+    <string name="hint_of_send_amount" >请输发送金额</string>
+    <string name="received_address_hint" >请输入接收地址</string>
+    <string name="hint_input_transaction_pin" >请输入资产密码</string>
+    <string name="transaction_pin_error" >资产密码错误，请重新输入</string>
+    <string name="send_security" >发送验证码</string>
+
+
+    <string name="sample_key_words" >angry teant organ novel angle hat siren matter mechanit tent biology husband</string>
+    <string name="sample_date_time" >2018-12-12 12:12</string>
+    <string name="sample_address" >1WJKSIJAFAJSKAJSIFJFSJ</string>
+    <string name="sample_balance" >0.0</string>
+    <string name="sample_notify" >恭喜157****4513用户挖矿获得0.5个BTC</string>
+    <string name="sample_phone1" >137****5721</string>
+    <string name="sample_phone" >17607353571</string>
+    <string name="sample_nickname" >张大金</string>
+    <string name="sample_hashrate" >算力%1$d</string>
+    <string name="sample_asset" >挖矿资产(CNY): 0.0</string>
+    <string name="sample_myAddress" >我的地址</string>
+    <string name="sample_how_to_load" >\u3000\u3000打开甲骨文钱包，在钱包起始页选择创建钱包，设置交易密码后，钱包即创建成功；用户需要根据提示备份好钱包助记词，拥有助记词即可完全控制钱包资产，甲骨文不存储用户钱包助记词，丢失助记词即丢失钱包资产，请务必妥善保存</string>
+    <string name="os_platform" >Android</string>
+    <string name="update_log" >1.0.0 \n\n 1、支持比特币、以太坊转入转出；\n
+2、实现挖矿功能；</string>
+
+    <string name="mining_working" >挖矿中</string>
+    <string name="mining_income" >挖矿收益</string>
+    <string name="mining_detail" >挖矿详情</string>
+    <string name="current_hashrate" >当前算力</string>
+    <string name="add_hashrate" >提升算力</string>
+    <string name="digital_des" >币种介绍</string>
+    <string name="finish_task" >任务完成</string>
+    <string name="auth" >身份认证</string>
+
+    <string name="update_photo" >修改头像</string>
+    <string name="nickname" >昵称</string>
+    <string name="phone_number" >手机号码</string>
+
+    <string name="gesture_security" >手势解锁</string>
+    <string name="gesture_security_des" >用于甲骨文钱包登入解锁</string>
+
+    <string name="jgw_wallet_des" >\u3000\u3000甲骨文手机安全钱包是一款轻钱包APP，使用加密芯片保存资产私钥，是您的数字资产的保险箱，还能通过挖矿获取其它数字资产，为您提供安全、便捷、可增值的数字资产管理。</string>
+    <string name="version_log" >版本日记</string>
+    <string name="check_and_update" >检测更新</string>
+
+    <string name="how_to_load" >如何导入钱包</string>
+    <string name="connect_service" >联系客服</string>
+
+    <string name="verify_gesture_security" >验证手势密码</string>
+    <string name="set_gesture_security_first" >请先设置手势密码！</string>
+    <string name="set_gesture_security" >设置手势密码</string>
+    <string name="set_gesture_security_success" >设置手势密码成功！</string>
+    <string name="draw_gesture_security" >请绘制手势密码</string>
+    <string name="draw_exist_gesture_security" >请输入原手势密码</string>
+    <string name="draw_gesture_security_again" >请再次绘制手势密码</string>
+    <string name="second_gesture_security_error" >手势密码不一致，请重新设置</string>
+    <string name="gesture_security_error" >手势密码错误</string>
+    <string name="pwd_error" >密码错误</string>
+
+    <string name="authentication" >实名认证</string>
+    <string name="write_auth_info" >请填写真实身份信息</string>
+    <string name="write_name" >输入姓名</string>
+    <string name="write_name_hint" >请输入真实姓名</string>
+    <string name="write_id_number" >输入身份证号码</string>
+    <string name="write_id_number_hint" >请输入真实身份证号码</string>
+
+    <string name="jgw_phone_wallet" >甲骨文手机钱包</string>
+    <string name="jgw_feature" >硬件加密 挖矿神器</string>
+    <string name="jgw_feature_des" >\u3000\u3000加密芯片守护您的资产私钥，永久安全，更能挖取比特币</string>
+    <string name="jgw_service" >咨询电话：0111-88888888</string>
+    <string name="share" >分享</string>
+
+    <string name="phone_is_null" >号码不能为空！</string>
+    <string name="verify_code_is_null" >验证码不能为空！</string>
+    <string name="pwd_code_is_null" >密码不能为空！</string>
+    <string name="input_not_equal" >两次输入不一致！请重新输入！</string>
+    <string name="pwd_pwd_invalid" >密码不正确！请重新输入！</string>
+    <string name="payment_pwd_invalid" >资产密码不正确！请重新输入！</string>
+
+    <string name="net_error" >网络访问错误，请稍后再试</string>
+    <string name="empty" >还没有数据哦</string>
+    <string name="loading" >请稍后...</string>
+    <string name="reload" >重新尝试</string>
+    <string name="no_net" >网络不可用,请检查你的网络</string>
+
+    <string name="request_photo_permission" >应用保持运行,需要这些权限</string>
+    <string name="resend_notice" >%1$ds后重发</string>
+    <string name="record" >记录</string>
+    <string name="id_auth_one" >共两步，第一步</string>
+    <string name="id_auth_two" >共两步，第二步</string>
+    <string name="id_photo_notice" >上传身份证正反面照片，请保证照片清晰可辨认</string>
+    <string name="id_front_notice" >上传身份证正面照片</string>
+    <string name="id_back_notice" >上传身份证反面照片</string>
+    <string name="load_from_album" >从相册导入</string>
+    <string name="submit" >提交</string>
+
+    <!-- 姨太钱包 Start-->
+    <string name="eth_wallet_not_found" >没有找到钱包文件</string>
+    <string name="notification_transferfail" >发送失败</string>
+    <string name="notification_transferingticker" >正在发送以太币</string>
+    <string name="notification_transfersuc" >发送成功</string>
+    <string name="notification_transfering_title" >发送以太币</string>
+    <string name="notification_might_take_a_minute" >请几分钟后再查看结果</string>
+    <string name="succes" >确认</string>
+    <string name="address_empty" >地址不能为空</string>
+    <string name="address_is_self" >接收地址不能是自己</string>
+    <string name="address_wrong" >非法的地址</string>
+    <string name="type_not_find" >不支持的币种类型</string>
+    <string name="send_amount_empty" >请输入需要转账的数量</string>
+    <string name="request_permission" >应用保持运行,需要这些权限</string>
+    <string name="password_wrong" >密码不正确</string>
+    <string name="clip_data_success" >复制地址成功</string>
+
+    <string name="send_eth_result_success" >发送以太币成功</string>
+    <string name="send_eth_result_fail" >发送以太币失败</string>
+    <!-- 姨太钱包 End-->
+
+    <string name="copy_success" >复制成功</string>
+
+    <!--  BTC Start -->
+    <string name="back_up_wallet" >备份钱包</string>
+    <!--<string name="write_down_backup_passphrase_suggestion" >Write down or memorize your 12 word wallet backup passphrase which can be found in settings. Your wallet backup passphrase is needed to recover your bitcoins.</string>-->
+    <string name="dont_remind_me" >免打扰</string>
+    <string name="remind_me_later" >稍后提醒我</string>
+    <string name="warning" >警告</string>
+    <string name="send_to_reusable_address_warning" >您正在向可重复使用的地址付款。确保接收方可以看到给他们的付款。</string>
+    <string name="msore_funds_needed" >你有%1$s，需要%2$s。（包括交易费用）</string>
+    <string name="funds_may_be_pending_confirmation" >一些金额尚处于待确认状态，暂时不能使用。（请检查您的账户历史记录）账户仅有%1$s的可支配余额</string>
+    <string name="insufficient_funds_dust" >余额不足。账户包含比特币的灰尘。您只能发送最多%1$s现在。</string>
+    <string name="insufficient_funds_account_balance" >余额不足。当需要%2$s的账户余额为%1$s。</string>
+    <string name="cannot_create_transactions_with_outputs_less_then" >无法创建输出小于%1$s的事务</string>
+    <string name="send_coin_success" >发送成功，请等待网络认证</string>
+    <string name="send_coin_fail" >发送失败，请重试</string>
+
+
+    <!--  BTC End -->
+
+    <string name="device_rooted_description" >您的设备似乎root过了。注意，一个root过了的设备上存储的资金是不安全的，此外，还可能有稳定性问题。</string>
+
+    <!--@PermissionsDenied({MainActivity.READ_EXTERNAL_STORAGE_CODE, MainActivity.WRITE_EXTERNAL_STORAGE_CODE-->
+    <!--, MainActivity.ACCESS_NETWORK_STATE_CODE, MainActivity.CHANGE_NETWORK_STATE_CODE, MainActivity.CHANGE_WIFI_STATE_CODE, MainActivity.CAMERA_CODE-->
+
+    <string name="rquest_permission_read_storage" >读取钱包，APP内部需要读取文件的权限</string>
+    <string name="rquest_permission_write_storage" >保存钱包，APP内部需要读取文件的权限</string>
+    <string name="rquest_permission_access_network_state" >为了同步数据，需要网络权限</string>
+    <string name="rquest_permission_change_network_state" >为了同步数据，需要网络权限</string>
+    <string name="rquest_permission_change_wifi_state" >为了同步数据，需要网络权限</string>
+    <string name="rquest_permission_camera" >二维码扫描，需要拍照权限</string>
+    <string name="rquest_permission_log" >错误收集，需要拍照权限</string>
+
+
+    <string name="passphrase_err" >助记词不对</string>
+    <string name="replace_wallet" >现在已经有钱包了，是否要删除当前的钱包？</string>
+    <string name="recover_wallet_wait" >正在恢复钱包，请稍后...</string>
+
+
+    <string name="jgw_query_balance_coin_eror" >获取甲骨币余额失败</string>
+    <string name="jgw_get_address_err" >获取甲骨文地址失败</string>
+    <string name="jgw_send_coin_succes" >发送甲骨文成功</string>
+    <string name="jgw_send_coin_fair_not_have_eth" >发送甲骨文失败,没有足够的ETH,用于转账手续费！ </string>
+    <string name="jgw_send_coin_fair" >发送甲骨文失败</string>
+    <string name="id_number_is_null" >身份证号码不能为空！</string>
+    <string name="name_is_null" >姓名不能为空！</string>
+    <string name="id_photo_is_null" >还未添加身份证正面照！</string>
+    <string name="id_back_photo_is_null" >还未添加身份证背面照！</string>
+
+    <string name="send_sucess" >发送成功</string>
+
+    <string name="session_is_invalid" >登录已过期！请重新登录！</string>
+    <string name="nickename" >昵称</string>
+    <string name="nickename_is_null" >昵称不能为空！</string>
+    <string name="nickename_input_hint" >请输入昵称</string>
+    <string name="invite_code" >邀请码</string>
+    <string name="invite_friends" >邀请好友</string>
+    <string name="invite_friends_num" >邀请好友数：</string>
+    <string name="complete_user_info" >完善信息</string>
+    <string name="hashrate_record" >算力记录</string>
+    <string name="share_to" >分享到</string>
+    <string name="feedback" >意见反馈</string>
+    <string name="personal_info" >个人信息</string>
+    <string name="recover_faild" >恢复钱包失败</string>
+
+    <string name="crowd" >众筹上链</string>
+    <string name="recommend" >综合推荐</string>
+    <string name="last" >即将结束</string>
+    <string name="high_popularity" >人气最旺</string>
+    <string name="iot_crowd" >IOT投票众筹上链平台</string>
+    <string name="my_order" >我的订单</string>
+    <string name="support" >去支持</string>
+
+    <string name="quit_notice" >连续两次返回退出！</string>
+    <string name="current_is_new" >已是最新版本！</string>
+    <string name="app_update" >App升级</string>
+    <string name="custom_service" >用户协议</string>
+    <string name="download_failed" >下载失败！</string>
+    <string name="feedback_banner" >您的反馈是我们前进的方向</string>
+    <string name="feedback_input_hint" >请输入您的问题或建议</string>
+    <string name="contact_way" >联系方式</string>
+    <string name="contact_hint" >电话/QQ/微信/邮箱</string>
+    <string name="eth" >ETH</string>
+    <string name="jgw" >OCE</string>
+    <!--<string name="oce" >OCE</string>-->
+    <string name="btc" >BTC</string>
+
+    <string name="token_type_err" >您选择的不是甲骨币</string>
+    <string name="sample_date" >2018-12-12</string>
+    <string name="feedback_content_is_null" >意见反馈内容不能为空！</string>
+    <string name="why_need_phone" >"PHONE_STATE权限申请：\n我们需要您开启读PHONE_STATE权限"</string>
+    <string name="why_need_storage" >sd卡权限申请：\n我们需要您开启读SD卡权限，以便上传照片</string>
+    <string name="why_need_camera" >相机权限申请：\n我们需要您开启相机拍照</string>
+    <string name="why_need_phone_state" >手机信息申请：\n我们需要您获取手机信息，用于确认挖矿身份，拒绝可能影响挖矿</string>
+    <string name="why_need_phone_state2" >手机信息申请：\n我们需要您获取手机信息，用于确认挖矿身份，拒绝可能影响挖矿</string>
+    <string name="why_need_albums" >相机权限申请：\n我们需要您开启相册，访问照片，文件</string>
+    <string name="why_need_install" >"安装权限申请：\n我们需要您开启读安装权限，用以更新app"</string>
+    <string name="storage_permission_fail" >sd卡权限申请失败！</string>
+    <string name="install_permission_fail" >安装应用权限申请失败！</string>
+    <string name="camera_permission_fail" >相机权限申请失败！</string>
+    <string name="phone_state_permission_fail" >手机信息权限申请失败！</string>
+    <string name="albums_state_permission_fail" >相册权限申请失败！</string>
+    <string name="file_not_exists" >找不到该文件！</string>
+    <string name="cny" >CNY</string>
+    <string name="merchants" >卖家</string>
+    <string name="customer" >买家</string>
+
+    <string name="function_is_developing" >功能开发中......敬请期待！</string>
+    <string name="total" >总计：</string>
+    <string name="available" >可用：</string>
+    <string name="award_pool" >奖励池:</string>
+    <string name="overflow_level" >超值档: </string>
+    <string name="crowd_progress" >众筹进度: </string>
+    <string name="vote_level" >投票档位</string>
+    <string name="vote_level_desc" >众筹成功后，将根据您投票的OCE占整个投票OCE的
+比重，分得项目对应奖金池中的OCE。众筹期间，投
+票的OCE将被锁定，众筹成功后解锁归还</string>
+    <string name="crowd_level" >众筹档位</string>
+    <string name="crowd_level_desc" >【个人档】您将以2999 OCE 的优惠价格获得缪斯智
+能珠宝戒指施华洛世奇闪钻版一个。</string>
+    <string name="numbers" >数量</string>
+    <string name="day" >天</string>
+    <string name="last_days" >剩余天数</string>
+    <string name="support_person_num" >支持人数</string>
+    <string name="current_crowd_value_sample" >已凑额度</string>
+    <string name="crowd_value_sample" >众筹OCE：2000000 OCE</string>
+    <string name="award_value_sample" >奖励池: 99999 OCE</string>
+    <string name="crowd_name_sample" >缪斯智能珠宝戒指</string>
+    <string name="crowd_des_sample" >缪斯智能珠宝戒指通过手机移动端轻松实现心率检查
+，一键拍照，远程关爱，一键密语，一键呼救，来电
+通知，摩斯密码。同时具备OCE绿色挖光功能</string>
+    <!--<string name="crowd_name_sample" >MuseHeart Smart Jewelry</string>-->
+    <!--<string name="crowd_des_sample" >缪斯智能珠宝戒指通过手机移动端轻松实现心率检查-->
+<!--，一键拍照，远程关爱，一键密语，一键呼救，来电-->
+    <!-- heart rate measurement, remote care, on key photograph, one key Message, one key SOS, call reminder, mobile anti lost, Morse code -->
+<!--通知，摩斯密码。同时具备OCE绿色挖光功能</string>-->
+
+
+    <string name="get_oce_address_failed" >获取OCE地址失败</string>
+    <string name="load_success" >导入成功</string>
+    <string name="transferring" >正在转账...</string>
+    <string name="transfer" >转账</string>
+    <string name="not_support_fingerprint" >当前设备不支持指纹</string>
+    <string name="set_password_first" >请先设置密码！</string>
+    <string name="add_fingerprint_first" >请到设置中设置指纹</string>
+    <string name="fingerprint_failed" >解锁失败！请重试！</string>
+    <string name="fingerprint_success" >解锁成功!</string>
+    <string name="wallet_build_failed" >创建钱包失败!</string>
+    <string name="wallet_is_exist" >钱包已存在!</string>
+    <string name="choose_login_type" >切换验证方式</string>
+    <string name="voice_login" >用声纹锁登录</string>
+    <string name="pwd_login" >用账号密码登录</string>
+    <string name="voice_steps" >
+        声纹使用步骤：\n\t
+        1、点击下面声纹录入按钮，然后松开，即开始录音。\n\t
+        2、大声用英文念出提示框中的四位数字。\n\t
+        3、4秒之后将自动上传声纹样本。\n\t
+        4、按照提示，重复前面三步，直到返回样本采集成功或失败。
+    </string>
+    <string name="voice_steps1" >1、点击下面声纹录入按钮，然后松开，即开始录音。\n\t</string>
+    <string name="voice_steps2" >2、大声用英文念出提示框中的四位数字。\n\t</string>
+    <string name="voice_steps3" >3、4秒之后将自动上传声纹样本。\n\t</string>
+    <string name="voice_steps4" >4、按照提示，重复前面三步，直到返回样本采集成功或失败\n\t</string>
+    <string name="available_capital" >可用</string>
+    <string name="frozen_capital" >冻结</string>
+    <string name="received_success">领取成功！</string>
+    <string name="received_failed" >领取失败！</string>
+    <string name="login_success">登录成功！</string>
+    <string name="login_failed" >登录失败！</string>
+
+</resources>

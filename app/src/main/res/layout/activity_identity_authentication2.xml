@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_mining_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/rl_of_title"
+        layout="@layout/layout_of_normal_title" />
+
+    <TextView
+        android:id="@+id/tv_auth_steps_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="95dp"
+        android:textColor="#193fc3"
+        android:textSize="14sp"
+        android:text="@string/id_auth_two"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="36dp"
+        android:layout_below="@id/tv_auth_steps_label">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textColor="#636467"
+                android:textSize="14sp"
+                android:text="@string/id_photo_notice"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="#b3b5bd"
+                    android:textSize="12sp"
+                    android:text="@string/id_front_notice"/>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/tv_load_from_album_front"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:gravity="center"
+                    android:textColor="#193fc3"
+                    android:textSize="12sp"
+                    android:text="@string/load_from_album"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_front_id_card"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:paddingLeft="16dp"
+                android:src="@mipmap/icon_take_photo"
+                android:scaleType="centerInside"
+                android:background="@mipmap/bg_take_photo"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="#b3b5bd"
+                    android:textSize="12sp"
+                    android:text="@string/id_back_notice"/>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/tv_load_from_album_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="#193fc3"
+                    android:textSize="12sp"
+                    android:text="@string/load_from_album"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_back_id_card"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:paddingLeft="16dp"
+                android:src="@mipmap/icon_take_photo"
+                android:scaleType="centerInside"
+                android:background="@mipmap/bg_take_photo"/>
+
+            <Button
+                android:id="@+id/btn_of_submit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="32dp"
+                android:text="@string/submit"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:background="@drawable/selector_of_blue_button"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

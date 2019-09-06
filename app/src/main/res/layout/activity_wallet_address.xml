@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_wallet_address"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.idea.jgw.ui.wallet.WalletAddressActivity">
+
+    <include layout="@layout/layout_of_normal_title" />
+
+    <RelativeLayout
+        android:id="@+id/rl_of_address"
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:background="#f6f7fa">
+
+        <TextView
+            android:id="@+id/tv_send_address_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#636467"
+            android:layout_marginTop="18dp"
+            android:text="@string/mine_address"/>
+
+        <TextView
+            android:id="@+id/tv_send_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_send_address_label"
+            android:textSize="12sp"
+            android:textColor="#636467"
+            android:layout_marginTop="6dp"
+            android:text="@string/sample_address"/>
+
+        <TextView
+            android:id="@+id/tv_copy_send_address"
+            android:layout_width="35dp"
+            android:layout_height="17dp"
+            android:layout_alignParentRight="true"
+            android:layout_above="@id/tv_send_address"
+            android:layout_marginBottom="4dp"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textColor="#ffffff"
+            android:text="@string/copy"
+            android:background="@drawable/drawable_of_copy"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_of_my_address"
+        android:layout_width="162dp"
+        android:layout_height="162dp"
+        android:layout_below="@id/rl_of_address"
+        android:layout_marginTop="54dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/red_notice"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/iv_of_my_address"
+        android:textColor="#636467"
+        android:textSize="14sp"
+        android:text="@string/mine_address"/>
+
+    <Button
+        android:id="@+id/share_address"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/share_address"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/selector_of_blue_button"/>
+
+</RelativeLayout>

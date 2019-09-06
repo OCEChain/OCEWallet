@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_start">
+
+    <include
+        android:id="@+id/rl_of_title"
+        layout="@layout/layout_of_transparent_bgl_title" />
+
+    <LinearLayout
+        android:id="@+id/ll_of_nation_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="105dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingRight="8dp"
+        android:gravity="center_vertical"
+        android:layout_below="@id/rl_of_title"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_nation_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#636467"
+            android:text="中国"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:src="@mipmap/down_arrow"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_of_phone_input"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_below="@id/ll_of_nation_code"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@mipmap/bg_of_input">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:src="@mipmap/icon_phone"/>
+
+        <EditText
+            style="@style/normal_editText"
+            android:id="@+id/et_of_nickname"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:hint="@string/hint_of_input_phone"
+            android:inputType="phone"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/iBtn_of_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:src="@mipmap/ic_input_delete"
+            android:background="@null"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_of_pwd_input"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/ll_of_phone_input"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@mipmap/bg_of_input">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/icon_security_code"/>
+
+        <EditText
+            style="@style/normal_editText"
+            android:id="@+id/et_of_security_code"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:hint="@string/hint_of_input_security"
+            android:inputType="number"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/tv_of_get_security_code"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/send_security"
+            android:gravity="center"
+            android:clickable="true"
+            android:padding="8dp"
+            android:textSize="12sp"
+            android:textColor="#193fc3"
+            android:background="@null"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_of_invite_code_input"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/ll_of_pwd_input"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@mipmap/bg_of_input">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:src="@mipmap/invite_code_logo"/>
+
+        <EditText
+            android:id="@+id/et_of_invite_code"
+            style="@style/normal_editText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:inputType="number"
+            android:hint="@string/hint_of_invite_code"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_of_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_of_invite_code_input"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:textSize="12sp"
+        android:textColor="#20b8ff"
+        android:text="@string/login"/>
+
+    <LinearLayout
+        android:id="@+id/ll_of_agreement"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/ll_of_invite_code_input"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="100dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/iBtn_of_agree_customer_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:src="@drawable/selector_of_agree_agreement"
+            android:background="@null"/>
+
+        <TextView
+            android:id="@+id/tv_of_agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:text="@string/agree_agreement"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/tv_of_customer_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:text="@string/customer_service"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_of_next"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@id/ll_of_agreement"
+        android:layout_marginTop="16dp"
+        android:text="@string/next"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:textColor="#f3f5f7"
+        android:background="@mipmap/bg_of_next"/>
+
+</RelativeLayout>
